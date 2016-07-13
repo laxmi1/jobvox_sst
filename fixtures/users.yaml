@@ -1,0 +1,21 @@
+laxmi:
+  name: Laxmi
+  email: laxmi@techvoxinc.com
+  password: test123
+  incorrect_password: test1234
+
+admin:
+  email: support@shopvox.com
+  password: the winter is coming
+  incorrect_password: test1234
+
+ravi:
+  name: Ravi
+  email: ravi@techvoxinc.com
+  password: test123
+  incorrect_password: test1234
+
+rao:
+  name: Rao
+  email: rao@techvoxinc.com
+  password: test123
