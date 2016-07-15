@@ -88,9 +88,9 @@ end
 def login
     @driver.get(@base_url + "/")
     @driver.find_element(:id, "email").clear
-    @driver.find_element(:id, "email").send_keys users(:ravi)["email"]
+    @driver.find_element(:id, "email").send_keys users(:laxmi)["email"]
     @driver.find_element(:id, "password").clear
-    @driver.find_element(:id, "password").send_keys users(:ravi)["password"] 
+    @driver.find_element(:id, "password").send_keys users(:laxmi)["password"] 
     @driver.find_element(:name, "commit").click
 end
 
