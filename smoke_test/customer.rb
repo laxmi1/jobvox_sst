@@ -18,7 +18,42 @@ class Login < Test::Unit::TestCase
   
 # Test to login with valid credentials
   def test_create_customer
-   
+    login
+    @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
+    @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
+    @driver.find_element(:link_text, "New customer").click
+
+    time = get_Present
+    customer_Name = "Customer "+time
+    @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
+    @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+
+    # primary_contact = "Contact "+time
+    # @driver.find_element(:xpath, "//input[@class='form-control ng-valid ng-scope ng-isolate-scope ng-touched ng-dirty ng-valid-parse']").send_keys primary_contact
+    
+    # primary_email = "laxmi@techvoxinc.com"
+    # @driver.find_element(:xpath, "//input[@placeholder='E-mail']").send_keys primary_email
+
+    # primary_phone = "9848071234"
+    # @driver.find_element(:xpath, "//input[@placeholder='(55555) 555555']").send_keys primary_phone
+
+    # primary_ext = "1234"
+    # @driver.find_element(:xpath, "//input[@placeholder='555']").send_keys primary_ext
+
+
+    industry  = "//select[@name='categoryId']"
+    industry_option = "Sign"
+    getSelect(industry,industry_option)
+
+    leadSource  = "//select[@name='leadSourceId']"
+    leadSource_option = "Call In"
+    getSelect(leadSource,leadSource_option)
+
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").click
+
+    puts "created customer with name: "+customer_Name
+
   end
 
   

@@ -107,3 +107,19 @@ def get_path
     path = Dir.pwd
 end
 
+def getElement_xpath(xpath)
+      x_path = xpath
+      begin
+        @driver.find_element(:xpath,x_path)
+      rescue
+        puts "Element : "+xpath+" not found"
+      end
+end
+
+def getSelect(xpath,option)
+  begin
+    Selenium::WebDriver::Support::Select.new(getElement_xpath(xpath)).select_by(:text,option)
+  rescue
+
+  end
+end
