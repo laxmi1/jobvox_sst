@@ -19,30 +19,22 @@ class Login < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_vendor
     login
-    @driver.find_element(:xpath, ".//*[@name ='suitcase']").click
-    @driver.find_element(:xpath, "//a[@ui-sref='vendors']").click
+    @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+    @driver.find_element(:xpath, "//a[@ui-sref='vendor_contacts']").click
     @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
-    @driver.find_element(:link_text, "New vendor").click
+    @driver.find_element(:xpath, "//a[@href='#/vendor_contacts/new']").click
+    
     time = get_Present
-    vendor_Name = "Test vendor "+ time
-    @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys vendor_Name
-    @driver.find_element(:xpath, "//input[@placeholder='Legal name']").send_keys "Abhi"
+    vendor_contact = "Vendor contact abhi "+ time
+    @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys vendor_contact
 
-    terms = "//select[@name='termCodeId']"
-    terms_option = "due 10"
-    getSelect(terms,terms_option) 
-
-    tax = "//select[@name='salesTaxId']"
-    tax_option = "Exempt"
-    getSelect(tax,tax_option)
-
-    # @driver.find_element(:xpath, "//input[@placeholder='jsmith@acme.com']").send_keys "abhinav@ahsgjashdkjf.com"
-    # @driver.find_element(:xpath, "//input[@placeholder='(55) 5555-5555']").send_keys "9848032919"
+    vendor_option = "abhi"
+    @driver.find_element(:xpath, "//input[@placeholder='Select Vendor...']").send_keys vendor_option
+    @driver.find_element(:xpath, "//div[@ng-bind-html='item[itemAttribute] | highlight: $select.search']").click
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-     
-     puts "created vendor with name: "+vendor_Name
-    
+
+    puts "created vendor contact with name: "+vendor_contact
   end
 
   
