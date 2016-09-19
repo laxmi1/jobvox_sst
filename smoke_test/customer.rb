@@ -29,17 +29,10 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
     @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
 
-    # primary_contact = "Contact "+time
-    # @driver.find_element(:xpath, "//input[@class='form-control ng-valid ng-scope ng-isolate-scope ng-touched ng-dirty ng-valid-parse']").send_keys primary_contact
-    
-    # primary_email = "laxmi@techvoxinc.com"
-    # @driver.find_element(:xpath, "//input[@placeholder='E-mail']").send_keys primary_email
-
-    # primary_phone = "9848071234"
-    # @driver.find_element(:xpath, "//input[@placeholder='(55555) 555555']").send_keys primary_phone
-
-    # primary_ext = "1234"
-    # @driver.find_element(:xpath, "//input[@placeholder='555']").send_keys primary_ext
+    contact_Name = "Contact "+time
+    @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
+    @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
+    @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
 
 
     industry  = "//select[@name='categoryId']"

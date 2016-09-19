@@ -1,0 +1,22 @@
+Loaded suite smoke_test/customer
+Started
+created customer with name: Customer 20160919-143758
+.
+
+Finished in 33.291132997 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.03 tests/s, 0.03 assertions/s
+Loaded suite smoke_test/customer
+Started
+created customer with name: Customer 20160919-143933
+.
+
+Finished in 33.669458874 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.03 tests/s, 0.03 assertions/s
