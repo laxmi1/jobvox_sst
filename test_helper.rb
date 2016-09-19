@@ -99,6 +99,27 @@ def logout
     @driver.find_element(:name, "sign-out").click
 end
 
+def create_customer
+    @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
+    @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
+    @driver.find_element(:link_text, "New customer").click
+
+    time = get_Present
+    customer_Name = "Customer "+time
+    @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
+    @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+    industry  = "//select[@name='categoryId']"
+    industry_option = "Sign"
+    getSelect(industry,industry_option)
+    leadSource  = "//select[@name='leadSourceId']"
+    leadSource_option = "Call In"
+    getSelect(leadSource,leadSource_option)
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").click
+    puts "created customer with name: "+customer_Name
+    return customer_Name
+end
+
 def get_Present
     time = Time.now.strftime("%Y%m%d-%H%M%S")
 end
