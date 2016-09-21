@@ -34,14 +34,13 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
     @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
 
-
     industry  = "//select[@name='categoryId']"
-    industry_option = "Sign"
-    getSelect(industry,industry_option)
+    industry_index = "1"
+    getSelect_by_index(industry,industry_index)
 
     leadSource  = "//select[@name='leadSourceId']"
-    leadSource_option = "Call In"
-    getSelect(leadSource,leadSource_option)
+    leadSource_index = "1"
+    getSelect_by_index(leadSource,leadSource_index)
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
 

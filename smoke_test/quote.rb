@@ -30,28 +30,33 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
     puts "customer selected in Quote page"
 
-    sleep 5
+    time = get_Present
+    quote_Name = "Quote for "+customer_Name+" "+time
+    @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys quote_Name
+    @driver.find_element(:xpath, "//textarea[@placeholder='About this quote']").send_keys "This quote is created through Selenium Automation"
 
-    
+    primarySalesRep = "//select[@name='primarySalesRepId']"
+    primarySalesRep_index = "1"
+    getSelect_by_index(primarySalesRep,primarySalesRep_index)
 
-    # time = get_Present
-    # customer_Name = "Customer "+time
-    # @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    # @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+    productionManager = "//select[@name='productionManagerId']"
+    productionManager_index = "2"
+    getSelect_by_index(productionManager,productionManager_index)
 
-  
-    # industry  = "//select[@name='categoryId']"
-    # industry_option = "Sign"
-    # getSelect(industry,industry_option)
+    project_manager = "//select[@name='projectManagerId']"
+    project_manager_index = "3"
+    getSelect_by_index(project_manager,project_manager_index)
 
-    # leadSource  = "//select[@name='leadSourceId']"
-    # leadSource_option = "Call In"
-    # getSelect(leadSource,leadSource_option)
+    estimator = "//select[@name='estimatorId']"
+    estimator_index = "1"
+    getSelect_by_index(estimator,estimator_index)
 
-    # @driver.find_element(:xpath, "//button[@class='submit-button button']").click
+    @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
 
-    # puts "created customer with name: "+customer_Name
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
 
+    puts "Created "+quote_Name
+       
   end
 
   

@@ -116,11 +116,13 @@ def create_customer
     @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
     
     industry  = "//select[@name='categoryId']"
-    industry_option = "Sign"
-    getSelect(industry,industry_option)
+    industry_index = "1"
+    getSelect_by_index(industry,industry_index)
+
     leadSource  = "//select[@name='leadSourceId']"
-    leadSource_option = "Call In"
-    getSelect(leadSource,leadSource_option)
+    leadSource_index = "1"
+    getSelect_by_index(leadSource,leadSource_index)
+
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
     puts "created customer with name: "+customer_Name
     return customer_Name
@@ -146,6 +148,14 @@ end
 def getSelect(xpath,option)
   begin
     Selenium::WebDriver::Support::Select.new(getElement_xpath(xpath)).select_by(:text,option)
+  rescue
+
+  end
+end
+
+def getSelect_by_index(xpath,index)
+  begin
+    Selenium::WebDriver::Support::Select.new(getElement_xpath(xpath)).select_by(:index,index)
   rescue
 
   end
