@@ -1,7 +1,7 @@
 load File.dirname(__FILE__) +  '/../test_helper.rb'
 load File.dirname(__FILE__) +  '/../test_helper.rb'
 
-class Login < Test::Unit::TestCase 
+class Quote < Test::Unit::TestCase 
   fixtures :users
 
 # To open firefox browser and the application url
@@ -20,6 +20,7 @@ class Login < Test::Unit::TestCase
   def test_create_quote
     login
     customer_Name = create_customer
+    product_Name = product_name
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Quote").click
@@ -56,6 +57,12 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
 
     puts "Created "+quote_Name
+    puts "Adding Line item With"+product_name
+
+    @driver.find_element(:link_text, "Add New Item").click
+    sleep 5
+    @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+    @driver.find_element(:id, "//div[@id='ui-select-choices-row-1-0']").click
        
   end
 

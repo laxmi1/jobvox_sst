@@ -128,6 +128,53 @@ def create_customer
     return customer_Name
 end
 
+def create_product
+    sleep 3
+    @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
+    @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
+    @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
+    @driver.find_element(:xpath, "//a[@ui-sref='products']").click
+    sleep 2
+    @driver.find_element(:link_text, "New Product").click
+    
+    time = get_Present
+    product_name = "Product "+time
+    @driver.find_element(:xpath, "//input[@name='product[name]']").send_keys product_name 
+    @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"  
+
+    type = "//select[@name='product[product_type_id]']"
+    type_index = "3"
+    getSelect_by_index(type,type_index)
+    sleep 1
+    category = "//select[@name='product[category_id]']"
+    category_index = "2"
+    getSelect_by_index(category,category_index)
+    
+    @driver.find_element(:xpath, "//input[@name='product[buying_cost_in_dollars]']").clear
+    @driver.find_element(:xpath, "//input[@name='product[buying_cost_in_dollars]']").send_keys "20"
+    sleep 1
+    @driver.find_element(:xpath, "//input[@name='product[cost_in_dollars]']").clear
+    @driver.find_element(:xpath, "//input[@name='product[cost_in_dollars]']").send_keys "30"
+
+    sleep 1
+    @driver.find_element(:xpath, "//input[@name='product[price_in_dollars]']").clear
+    @driver.find_element(:xpath, "//input[@name='product[price_in_dollars]']").send_keys "40"
+    
+    incomeaccount = "//select[@name='product[income_coa_account_id]']"
+    incomeaccount_index = "2"
+    getSelect_by_index(incomeaccount,incomeaccount_index)
+
+    cogaccount = "//select[@name='product[cog_coa_account_id]']"
+    cogaccount_index = "2"
+    getSelect_by_index(cogaccount,cogaccount_index)
+    
+    @driver.find_element(:xpath, "//input[@class='button']").click
+
+    puts "Created "+product_name
+
+    return product_name
+end
+
 def get_Present
     time = Time.now.strftime("%Y%m%d-%H%M%S")
 end
