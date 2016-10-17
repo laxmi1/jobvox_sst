@@ -20,7 +20,8 @@ class Quote < Test::Unit::TestCase
   def test_create_quote
     login
     customer_Name = create_customer
-    product_Name = product_name
+    sleep 2
+    product_Name = create_product
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Quote").click

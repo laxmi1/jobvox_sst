@@ -113,7 +113,7 @@ def create_customer
     contact_Name = "Contact "+time
     @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
     @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
-    @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
+    # @driver.find_element(:xpath, "//div[1][@class='form-control ng-pristine ng-untouched ng-valid ng-isolate-scope']/phone-field/div/div").send_keys "9848071234"
     
     industry  = "//select[@name='categoryId']"
     industry_index = "1"
