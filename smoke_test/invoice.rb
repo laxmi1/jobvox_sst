@@ -29,7 +29,7 @@ class Invoice < Test::Unit::TestCase
     sleep 2
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
-    puts "customer selected in order page"
+    puts "customer selected in invoice page"
 
     time = get_Present
     invoice_Name = "invoice for "+customer_Name+" "+time
@@ -55,7 +55,7 @@ class Invoice < Test::Unit::TestCase
     @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-
+    sleep 2
     puts "Created "+invoice_Name
        
   end

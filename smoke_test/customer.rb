@@ -19,9 +19,12 @@ class Customer < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_customer
     login
-    @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
+    sleep 10
+    @driver.find_element(:xpath, "//i[@name ='suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
-    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
+    sleep 5
+    @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
+
     @driver.find_element(:link_text, "New customer").click
 
     time = get_Present

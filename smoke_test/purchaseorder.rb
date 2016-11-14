@@ -20,9 +20,11 @@ class Po < Test::Unit::TestCase
   def test_create_purchaseorder
     login
     sleep 10
+    # vendor_Name = create_vendor
+    
     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='vendors']").click
-    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
+    @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
     @driver.find_element(:link_text, "New vendor").click
     time = get_Present
     vendor_Name = "Test vendor "+ time
@@ -30,24 +32,24 @@ class Po < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Legal name']").send_keys "Abhi"
 
     terms = "//select[@name='termCodeId']"
-    terms_option = "due 10"
-    getSelect(terms,terms_option) 
+    terms_index = "2"
+    getSelect_by_index(terms,terms_index) 
 
     tax = "//select[@name='salesTaxId']"
-    tax_option = "Exempt"
-    getSelect(tax,tax_option)
+    tax_index = "2"
+    getSelect_by_index(tax,tax_index)
 
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-     
+    @driver.find_element(:xpath, "//input[@placeholder='jsmith@acme.com']").send_keys "abhinav@ahsgjashdkjf.com"
+    # @driver.find_element(:xpath, "//input[@placeholder='(55) 5555-5555']").send_keys "9848032919"
+
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
+    sleep 5
+
      puts "created vendor with name: "+vendor_Name
 
-    sleep 5
-
-    @driver.find_element(:xpath, "//a[@class='sidebar-toggle sidebar-toggle--dark left']").click
-    @driver.find_element(:xpath, "//button[@class='button dropdown-toggle']").click
-
-    @driver.find_element(:link_text, "Purchase order").click
-    sleep 5
+    @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
+    @driver.find_element(:link_text, "New Purchase Order").click
+    sleep 3
     time = get_Present
     po_Name = "po for "+vendor_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys po_Name
@@ -57,7 +59,14 @@ class Po < Test::Unit::TestCase
     tax_index = "2"
     getSelect_by_index(tax,tax_index)
 
+    sleep 2
+
+    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").send_keys :enter
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    puts "vendor selected in PO page"
+
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
+    sleep 3
 
     puts "Created "+po_Name
 

@@ -51,11 +51,11 @@ class Order < Test::Unit::TestCase
     estimator = "//select[@name='estimatorId']"
     estimator_index = "1"
     getSelect_by_index(estimator,estimator_index)
-
+    sleep 2
     @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-
+    sleep 2
     puts "Created "+order_Name
        
   end

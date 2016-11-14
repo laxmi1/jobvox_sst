@@ -23,9 +23,8 @@ class Saleslead < Test::Unit::TestCase
     customer_Name = create_customer
     sleep 10
     @driver.find_element(:link_text, "Sales Leads").click
-
     @driver.find_element(:link_text, "New Sales lead").click
-
+    
     time = get_Present
     saleslead_Name = "sales lead for "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys saleslead_Name
@@ -33,7 +32,7 @@ class Saleslead < Test::Unit::TestCase
     @driver.find_element(:xpath, "//textarea[@placeholder='Details']").send_keys "Test sales lead details for automation selenium"
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
     sleep 2
-    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys "abhi"
+    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
     puts "customer selected in sales lead page"
 
@@ -53,9 +52,14 @@ class Saleslead < Test::Unit::TestCase
     pipeline_index = "3"
     getSelect_by_index(pipeline,pipeline_index)
 
+    leadsource = "//select[@name='leadSourceId']"
+    leadsource_index = "2"
+    getSelect_by_index(leadsource,leadsource_index)
     sleep 2
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-     
+
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter
+     sleep 5
+
      puts "created sales lead with name: "+saleslead_Name
     
 

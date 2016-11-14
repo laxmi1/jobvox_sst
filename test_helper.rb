@@ -99,10 +99,39 @@ def logout
     @driver.find_element(:name, "sign-out").click
 end
 
+# def create_vendor
+#   sleep 3
+#     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+#     @driver.find_element(:xpath, "//a[@ui-sref='vendors']").click
+#     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
+#     @driver.find_element(:link_text, "New vendor").click
+#     time = get_Present
+#     vendor_Name = "Test vendor "+ time
+#     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys vendor_Name
+#     @driver.find_element(:xpath, "//input[@placeholder='Legal name']").send_keys "Abhi"
+
+#     terms = "//select[@name='termCodeId']"
+#     terms_index = "2"
+#     getSelect_by_index(terms,terms_index) 
+
+#     tax = "//select[@name='salesTaxId']"
+#     tax_index = "2"
+#     getSelect_by_index(tax,tax_index)
+
+#     @driver.find_element(:xpath, "//input[@placeholder='jsmith@acme.com']").send_keys "abhinav@ahsgjashdkjf.com"
+#     # @driver.find_element(:xpath, "//input[@placeholder='(55) 5555-5555']").send_keys "9848032919"
+
+#     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter
+#     sleep 5    
+
+#      puts "created vendor with name: "+vendor_Name
+#   return vendor_name
+# end
+
 def create_customer
     @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
-    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
+    @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
     @driver.find_element(:link_text, "New customer").click
 
     time = get_Present
@@ -127,6 +156,8 @@ def create_customer
     puts "created customer with name: "+customer_Name
     return customer_Name
 end
+
+
 
 def create_product
     sleep 3
