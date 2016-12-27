@@ -58,11 +58,12 @@ class Po < Test::Unit::TestCase
     tax = "//select[@name='salesTaxId']"
     tax_index = "2"
     getSelect_by_index(tax,tax_index)
-
+    sleep 4
+    @driver.find_element(:xpath, "html/body/section/div//div/div[2]/div[1]/form/div[1]/div/section[3]/div/div[1]/vox-dynamic-select/div/div/div/div").click
     sleep 2
-
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").send_keys :enter
+    @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+
     puts "vendor selected in PO page"
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 

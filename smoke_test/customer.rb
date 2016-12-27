@@ -20,7 +20,8 @@ class Customer < Test::Unit::TestCase
   def test_create_customer
     login
     sleep 10
-    @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+    @driver.find_element(:link_text, "Customers & Vendors").click
+    # @driver.find_element(:xpath, "//i[@name ='suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
     sleep 5
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
@@ -30,23 +31,36 @@ class Customer < Test::Unit::TestCase
     time = get_Present
     customer_Name = "Customer "+time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
-    @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+    begin
+      @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+      puts "Legal name available"
+      sleep 5
+    rescue => e
+      puts "Legal name not available"
+    end
 
-    contact_Name = "Contact "+time
+    begin
+      contact_Name = "Contact "+time
     @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
     @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
+           puts "Contact available"
+           sleep 5
+       rescue => e
+           puts "Contact is not available"
+end
+    
     # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
-
     industry  = "//select[@name='categoryId']"
     industry_index = "1"
     getSelect_by_index(industry,industry_index)
+
 
     leadSource  = "//select[@name='leadSourceId']"
     leadSource_index = "1"
     getSelect_by_index(leadSource,leadSource_index)
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-
+    sleep 5
     puts "created customer with name: "+customer_Name
 
   end

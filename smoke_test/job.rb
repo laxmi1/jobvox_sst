@@ -62,14 +62,6 @@ class Order < Test::Unit::TestCase
     sleep 2
     puts "Created "+job_Name
     sleep 5 
-
-    # puts "Created "+order_Name
-    # puts "Adding Line item With"+product_name
-    # @driver.find_element(:link_text, "Add New Item").click
-    # sleep 5
-
-    # @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
-    # @driver.find_element(:id, "//div[@id='ui-select-choices-row-1-0']").click
        
   end
 
