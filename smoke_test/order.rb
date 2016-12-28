@@ -26,11 +26,12 @@ class Order < Test::Unit::TestCase
     @driver.find_element(:link_text, "New Sales Order").click
     sleep 5
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
-    sleep 2
+    sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
+    sleep 2
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
     puts "customer selected in order page"
-
+    begin
     time = get_Present
     order_Name = "Sales Order for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys order_Name
@@ -53,7 +54,12 @@ class Order < Test::Unit::TestCase
     getSelect_by_index(estimator,estimator_index)
     sleep 2
     @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
-
+    sleep 5
+    puts "Available"
+    rescue => e
+    puts "Not Available"  
+    sleep 5
+    end
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
     puts "Created "+order_Name

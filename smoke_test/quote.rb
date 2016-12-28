@@ -31,12 +31,12 @@ class Quote < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
     puts "customer selected in Quote page"
-
+    begin
     time = get_Present
     quote_Name = "Quote for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys quote_Name
     @driver.find_element(:xpath, "//textarea[@placeholder='About this quote']").send_keys "This quote is created through Selenium Automation"
-
+    
     primarySalesRep = "//select[@name='primarySalesRepId']"
     primarySalesRep_index = "1"
     getSelect_by_index(primarySalesRep,primarySalesRep_index)
@@ -54,7 +54,11 @@ class Quote < Test::Unit::TestCase
     getSelect_by_index(estimator,estimator_index)
 
     @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
-
+    puts "Available"
+    sleep 5
+    rescue => e
+    puts "Not Available"  
+    end
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
 
     puts "Created "+quote_Name

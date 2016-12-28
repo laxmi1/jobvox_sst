@@ -30,7 +30,8 @@ class Invoice < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
     puts "customer selected in invoice page"
-
+    
+    begin
     time = get_Present
     invoice_Name = "invoice for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys invoice_Name
@@ -53,7 +54,11 @@ class Invoice < Test::Unit::TestCase
     getSelect_by_index(estimator,estimator_index)
 
     @driver.find_element(:xpath , "//textarea[@placeholder='Customer Note']").send_keys "Customer Note"
-
+    puts "Available"
+    sleep 5
+  rescue => e
+    puts "Not Available"
+  end
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
     puts "Created "+invoice_Name

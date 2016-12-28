@@ -125,39 +125,52 @@ end
 #     sleep 5    
 
 #      puts "created vendor with name: "+vendor_Name
-#   return vendor_name
+  # return vendor_name
 # end
 
 def create_customer
     @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+    sleep 5
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
+
     @driver.find_element(:link_text, "New customer").click
 
     time = get_Present
     customer_Name = "Customer "+time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
-    @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
-
-    contact_Name = "Contact "+time
+    begin
+      @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
+      puts "Legal name available"
+      sleep 5
+    rescue => e
+      puts "Legal name not available"
+    end
+    begin
+      contact_Name = "Contact "+time
     @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
     @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
-    # @driver.find_element(:xpath, "//div[1][@class='form-control ng-pristine ng-untouched ng-valid ng-isolate-scope']/phone-field/div/div").send_keys "9848071234"
+           puts "Contact available"
+           sleep 5
+       rescue => e
+           puts "Contact is not available"
+end
     
+    # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
     industry  = "//select[@name='categoryId']"
     industry_index = "1"
     getSelect_by_index(industry,industry_index)
+
 
     leadSource  = "//select[@name='leadSourceId']"
     leadSource_index = "1"
     getSelect_by_index(leadSource,leadSource_index)
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
+    sleep 5
     puts "created customer with name: "+customer_Name
-    return customer_Name
-end
-
-
+  return customer_Name
+  end
 
 def create_product
     sleep 3
@@ -171,23 +184,28 @@ def create_product
     time = get_Present
     product_name = "Product "+time
     @driver.find_element(:xpath, "//input[@name='product[name]']").send_keys product_name 
-    @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"  
-
+    begin
+    @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"        
+    puts "description available"
+    sleep 2
+    rescue => e
+    puts "description not available"       
+    end
     type = "//select[@name='product[product_type_id]']"
     type_index = "3"
     getSelect_by_index(type,type_index)
-    sleep 1
+    sleep 2
     category = "//select[@name='product[category_id]']"
     category_index = "2"
     getSelect_by_index(category,category_index)
     
     @driver.find_element(:xpath, "//input[@name='product[buying_cost_in_dollars]']").clear
     @driver.find_element(:xpath, "//input[@name='product[buying_cost_in_dollars]']").send_keys "20"
-    sleep 1
+    sleep 2
     @driver.find_element(:xpath, "//input[@name='product[cost_in_dollars]']").clear
     @driver.find_element(:xpath, "//input[@name='product[cost_in_dollars]']").send_keys "30"
 
-    sleep 1
+    sleep 2
     @driver.find_element(:xpath, "//input[@name='product[price_in_dollars]']").clear
     @driver.find_element(:xpath, "//input[@name='product[price_in_dollars]']").send_keys "40"
     
@@ -200,11 +218,11 @@ def create_product
     getSelect_by_index(cogaccount,cogaccount_index)
     
     @driver.find_element(:xpath, "//input[@class='button']").click
-
-    puts "Created "+product_name
-
+    sleep 5
+     puts "Created "+product_name
     return product_name
-end
+       
+  end
 
 def get_Present
     time = Time.now.strftime("%Y%m%d-%H%M%S")

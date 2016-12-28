@@ -30,8 +30,13 @@ class Product < Test::Unit::TestCase
     time = get_Present
     product_name = "Product "+time
     @driver.find_element(:xpath, "//input[@name='product[name]']").send_keys product_name 
-    @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"  
-
+    begin
+    @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"        
+    puts "description available"
+    sleep 2
+    rescue => e
+    puts "description not available"       
+    end
     type = "//select[@name='product[product_type_id]']"
     type_index = "3"
     getSelect_by_index(type,type_index)
@@ -59,7 +64,6 @@ class Product < Test::Unit::TestCase
     getSelect_by_index(cogaccount,cogaccount_index)
     
     @driver.find_element(:xpath, "//input[@class='button']").click
-    
     sleep 5
      puts "Created "+product_name
       

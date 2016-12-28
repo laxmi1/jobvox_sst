@@ -35,8 +35,14 @@ class Order < Test::Unit::TestCase
     time = get_Present
     job_Name = "Job for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys job_Name
-    @driver.find_element(:xpath, "//textarea[@placeholder='Description']").send_keys "This job is created through Selenium Automation"
-
+    begin
+      @driver.find_element(:xpath, "//textarea[@placeholder='Description']").send_keys "This job is created through Selenium Automation"
+      puts "Description is available"
+      sleep 5
+    rescue => e
+      puts "Description is not available"
+    end
+    
     @driver.find_element(:xpath, "//input[@placeholder='Quantity']").send_keys "2"
     sleep 2
 
@@ -44,7 +50,7 @@ class Order < Test::Unit::TestCase
     workflow_index = "2"
     getSelect_by_index(workflow,workflow_index)
     sleep 2
-
+    begin
     salesRep = "//select[@name='salesRepId']"
     salesRep_index = "1"
     getSelect_by_index(salesRep,salesRep_index)
@@ -57,6 +63,11 @@ class Order < Test::Unit::TestCase
     project_manager = "//select[@name='projectManagerId']"
     project_manager_index = "3"
     getSelect_by_index(project_manager,project_manager_index) 
+    puts "Details available"
+    sleep 5
+    rescue => e
+      puts "not available"
+    end
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
