@@ -1761,3 +1761,302 @@ Finished in 80.113052145 seconds.
 100% passed
 ------
 0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/order
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20161229-111230
+customer selected in order page
+Available
+Created Sales Order for Customer 20161229-111230 20161229-111322
+.
+
+Finished in 135.798678538 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_task(Login): Selenium::WebDriver::Error::ElementNotVisibleError: Element is not currently visible and so may not be interacted with
+[remote server] file:///tmp/webdriver-profile20161229-4804-v642m5/extensions/fxdriver@googlecode.com/components/command-processor.js:10092:in `fxdriver.preconditions.visible'
+[remote server] file:///tmp/webdriver-profile20161229-4804-v642m5/extensions/fxdriver@googlecode.com/components/command-processor.js:12644:in `DelayedCommand.prototype.checkPreconditions_'
+[remote server] file:///tmp/webdriver-profile20161229-4804-v642m5/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'
+[remote server] file:///tmp/webdriver-profile20161229-4804-v642m5/extensions/fxdriver@googlecode.com/components/command-processor.js:625:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/jobboard.rb:23:in `test_create_task'
+     20:   def test_create_task
+     21:     login
+     22:     sleep 10
+  => 23:     @driver.find_element(:xpath, "//i[@name='cogs']").click
+     24:     sleep 5    
+     25:     @driver.find_element(:link_text, "Cards").click
+     26:     sleep 4
+===============================================================================
+
+
+Finished in 58.458126576 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login): Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {"method":"link text","selector":"jobs"}
+[remote server] file:///tmp/webdriver-profile20161229-4952-1ce8kce/extensions/fxdriver@googlecode.com/components/driver-component.js:10770:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-4952-1ce8kce/extensions/fxdriver@googlecode.com/components/driver-component.js:625:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/jobboard.rb:23:in `test_create_jobboard'
+     20:   def test_create_jobboard
+     21:     login
+     22:     sleep 10
+  => 23:     @driver.find_element(:link_text, "jobs").click
+     24:     sleep 5    
+     25:     @driver.find_element(:link_text, "Cards").click
+     26:     sleep 4
+===============================================================================
+
+
+Finished in 50.145802163 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+.
+
+Finished in 144.019682789 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login): Selenium::WebDriver::Error::ElementNotVisibleError: Element is not currently visible and so may not be interacted with
+[remote server] file:///tmp/webdriver-profile20161229-6123-yn8bhg/extensions/fxdriver@googlecode.com/components/command-processor.js:10092:in `fxdriver.preconditions.visible'
+[remote server] file:///tmp/webdriver-profile20161229-6123-yn8bhg/extensions/fxdriver@googlecode.com/components/command-processor.js:12644:in `DelayedCommand.prototype.checkPreconditions_'
+[remote server] file:///tmp/webdriver-profile20161229-6123-yn8bhg/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'
+[remote server] file:///tmp/webdriver-profile20161229-6123-yn8bhg/extensions/fxdriver@googlecode.com/components/command-processor.js:625:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/jobboard.rb:23:in `test_create_jobboard'
+     20:   def test_create_jobboard
+     21:     login
+     22:     sleep 10
+  => 23:     @driver.find_element(:xpath, "//i[@class='fa fa-cogs']").click
+     24:     sleep 5    
+     25:     @driver.find_element(:link_text, "Cards").click
+     26:     sleep 4
+===============================================================================
+
+
+Finished in 48.470770118 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login): Selenium::WebDriver::Error::ElementNotVisibleError: Element is not currently visible and so may not be interacted with
+[remote server] file:///tmp/webdriver-profile20161229-6255-1mvfryh/extensions/fxdriver@googlecode.com/components/command-processor.js:10092:in `fxdriver.preconditions.visible'
+[remote server] file:///tmp/webdriver-profile20161229-6255-1mvfryh/extensions/fxdriver@googlecode.com/components/command-processor.js:12644:in `DelayedCommand.prototype.checkPreconditions_'
+[remote server] file:///tmp/webdriver-profile20161229-6255-1mvfryh/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'
+[remote server] file:///tmp/webdriver-profile20161229-6255-1mvfryh/extensions/fxdriver@googlecode.com/components/command-processor.js:625:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/jobboard.rb:23:in `test_create_jobboard'
+     20:   def test_create_jobboard
+     21:     login
+     22:     sleep 10
+  => 23:     @driver.find_element(:xpath, "//i[@class='fa fa-cogs']").click
+     24:     sleep 5    
+     25:     @driver.find_element(:link_text, "Cards").click
+     26:     sleep 4
+===============================================================================
+
+
+Finished in 42.707681841 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/Materialreq
+Started
+E
+===============================================================================
+Error: test_create_materialreq(Login): Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {"method":"link text","selector":"Search for Material..."}
+[remote server] file:///tmp/webdriver-profile20161229-6542-nb25ws/extensions/fxdriver@googlecode.com/components/driver-component.js:10770:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-6542-nb25ws/extensions/fxdriver@googlecode.com/components/driver-component.js:10779:in `FirefoxDriver.prototype.findElement'
+[remote server] file:///tmp/webdriver-profile20161229-6542-nb25ws/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'
+[remote server] file:///tmp/webdriver-profile20161229-6542-nb25ws/extensions/fxdriver@googlecode.com/components/command-processor.js:12666:in `DelayedCommand.prototype.executeInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-6542-nb25ws/extensions/fxdriver@googlecode.com/components/command-processor.js:12608:in `DelayedCommand.prototype.execute/<'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/Materialreq.rb:27:in `test_create_materialreq'
+     24:     sleep 5    
+     25:     @driver.find_element(:link_text, "New Material Requisition").click
+     26:     sleep 4
+  => 27:     @driver.find_element(:link_text, "Search for Material...").send_keys "ab"
+     28:     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+     29:     sleep 2
+     30:     uom = "//select[@name='uomName']"
+===============================================================================
+
+
+Finished in 114.146806564 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/Materialreq
+Started
+E
+===============================================================================
+Error: test_create_materialreq(Login): Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {"method":"link text","selector":"Search for Material..."}
+[remote server] file:///tmp/webdriver-profile20161229-6756-8b0evz/extensions/fxdriver@googlecode.com/components/driver-component.js:10770:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-6756-8b0evz/extensions/fxdriver@googlecode.com/components/driver-component.js:10779:in `FirefoxDriver.prototype.findElement'
+[remote server] file:///tmp/webdriver-profile20161229-6756-8b0evz/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'
+[remote server] file:///tmp/webdriver-profile20161229-6756-8b0evz/extensions/fxdriver@googlecode.com/components/command-processor.js:12666:in `DelayedCommand.prototype.executeInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-6756-8b0evz/extensions/fxdriver@googlecode.com/components/command-processor.js:12608:in `DelayedCommand.prototype.execute/<'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/Materialreq.rb:28:in `test_create_materialreq'
+     25:     @driver.find_element(:link_text, "New Material Requisition").click
+     26:     sleep 4
+     27:     @driver.find_element(:xpath, "//span[@class='ui-select-placeholder text-muted ng-binding']").click
+  => 28:     @driver.find_element(:link_text, "Search for Material...").send_keys "ab"
+     29:     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+     30:     sleep 2
+     31:     uom = "//select[@name='uomName']"
+===============================================================================
+
+
+Finished in 105.887094117 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/Materialreq
+Started
+E
+===============================================================================
+Error: test_create_materialreq(Login): Selenium::WebDriver::Error::NoSuchElementError: Unable to locate element: {"method":"xpath","selector":"//a[@class='ui-select-choices-row-inner']/div"}
+[remote server] file:///tmp/webdriver-profile20161229-6920-uit12t/extensions/fxdriver@googlecode.com/components/driver-component.js:10770:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///tmp/webdriver-profile20161229-6920-uit12t/extensions/fxdriver@googlecode.com/components/driver-component.js:625:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/Materialreq.rb:28:in `test_create_materialreq'
+     25:     @driver.find_element(:link_text, "New Material Requisition").click
+     26:     sleep 4
+     27:     @driver.find_element(:xpath, "//span[@class='ui-select-placeholder text-muted ng-binding']").send_keys "ab"
+  => 28:     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+     29:     sleep 2
+     30:     uom = "//select[@name='uomName']"
+     31:     uom_index = "2"
+===============================================================================
+
+
+Finished in 71.26784412 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/Materialreq
+Started
+Created
+.
+
+Finished in 80.846260975 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreq
+Started
+Created Material 20161229-132753
+Created
+.
+
+Finished in 151.476508022 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
