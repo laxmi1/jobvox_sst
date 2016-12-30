@@ -80,8 +80,7 @@ def add_line_item(name=nil)
 
       sleep(6)
 
-      getElement_xpath("//a[@class='ui-select-choices-row-inner']/div/span"
-).click
+      getElement_xpath("//a[@class='ui-select-choices-row-inner']/div/span").click
 
       sleep(6)
 
