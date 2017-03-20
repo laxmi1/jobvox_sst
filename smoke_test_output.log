@@ -2,16 +2,11 @@ Loaded suite smoke_test/jobboard
 Started
 E
 ===============================================================================
-Error: test_create_jobboard(Login):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_jobboard(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/jobboard.rb:9:in `setup'
 ===============================================================================
 E
@@ -21,26 +16,21 @@ smoke_test/jobboard.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.175182793 seconds.
+Finished in 0.09083173 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-5.71 tests/s, 0.00 assertions/s
+11.01 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/login
 Started
 E
 ===============================================================================
-Error: test_login_with_correct_creds(Login):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_login_with_correct_creds(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/login.rb:9:in `setup'
 ===============================================================================
 E
@@ -50,26 +40,21 @@ smoke_test/login.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.15570841 seconds.
+Finished in 0.088989749 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.42 tests/s, 0.00 assertions/s
+11.24 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/vendor_contact
 Started
 E
 ===============================================================================
-Error: test_create_vendor(VendorContact):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_vendor(VendorContact): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/vendor_contact.rb:9:in `setup'
 ===============================================================================
 E
@@ -79,26 +64,21 @@ smoke_test/vendor_contact.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.156039146 seconds.
+Finished in 0.089385648 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.41 tests/s, 0.00 assertions/s
+11.19 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/reports
 Started
 E
 ===============================================================================
-Error: test_load_reports(Product):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_load_reports(Product): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/reports.rb:9:in `setup'
 ===============================================================================
 E
@@ -108,26 +88,21 @@ smoke_test/reports.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.166077693 seconds.
+Finished in 0.09009552 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.02 tests/s, 0.00 assertions/s
+11.10 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/purchaseorder
 Started
 E
 ===============================================================================
-Error: test_create_purchaseorder(Po):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_purchaseorder(Po): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/purchaseorder.rb:9:in `setup'
 ===============================================================================
 E
@@ -137,26 +112,21 @@ smoke_test/purchaseorder.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.158019955 seconds.
+Finished in 0.088324391 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.33 tests/s, 0.00 assertions/s
+11.32 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/tasks
 Started
 E
 ===============================================================================
-Error: test_create_task(Login):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_task(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/tasks.rb:9:in `setup'
 ===============================================================================
 E
@@ -166,26 +136,21 @@ smoke_test/tasks.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.155294532 seconds.
+Finished in 0.09138404 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.44 tests/s, 0.00 assertions/s
+10.94 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/quote
 Started
 E
 ===============================================================================
-Error: test_create_quote(Quote):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_quote(Quote): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/quote.rb:9:in `setup'
 ===============================================================================
 E
@@ -195,26 +160,21 @@ smoke_test/quote.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.178430335 seconds.
+Finished in 0.090601861 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-5.60 tests/s, 0.00 assertions/s
+11.04 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/material
 Started
 E
 ===============================================================================
-Error: test_create_material(Product):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_material(Product): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/material.rb:9:in `setup'
 ===============================================================================
 E
@@ -224,26 +184,21 @@ smoke_test/material.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.159879882 seconds.
+Finished in 0.090306192 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.25 tests/s, 0.00 assertions/s
+11.07 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/customer
 Started
 E
 ===============================================================================
-Error: test_create_customer(Customer):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_customer(Customer): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/customer.rb:9:in `setup'
 ===============================================================================
 E
@@ -253,26 +208,21 @@ smoke_test/customer.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.153424884 seconds.
+Finished in 0.090989034 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.52 tests/s, 0.00 assertions/s
+10.99 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/materialreceipt
 Started
 E
 ===============================================================================
-Error: test_create_mr(Po):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_mr(Po): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/materialreceipt.rb:9:in `setup'
 ===============================================================================
 E
@@ -282,26 +232,21 @@ smoke_test/materialreceipt.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.161696357 seconds.
+Finished in 0.100642734 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.18 tests/s, 0.00 assertions/s
+9.94 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/job
 Started
 E
 ===============================================================================
-Error: test_create_job(Order):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_job(Order): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/job.rb:9:in `setup'
 ===============================================================================
 E
@@ -311,26 +256,21 @@ smoke_test/job.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.157627826 seconds.
+Finished in 0.092172999 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.34 tests/s, 0.00 assertions/s
+10.85 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/vendor
 Started
 E
 ===============================================================================
-Error: test_create_vendor(Vendor):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_vendor(Vendor): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/vendor.rb:9:in `setup'
 ===============================================================================
 E
@@ -340,26 +280,21 @@ smoke_test/vendor.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.166909285 seconds.
+Finished in 0.090191476 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-5.99 tests/s, 0.00 assertions/s
+11.09 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/project
 Started
 E
 ===============================================================================
-Error: test_create_project(Login):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_project(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/project.rb:9:in `setup'
 ===============================================================================
 E
@@ -369,26 +304,21 @@ smoke_test/project.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.155726686 seconds.
+Finished in 0.091330782 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.42 tests/s, 0.00 assertions/s
+10.95 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/order
 Started
 E
 ===============================================================================
-Error: test_create_order(Order):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_order(Order): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/order.rb:9:in `setup'
 ===============================================================================
 E
@@ -398,26 +328,21 @@ smoke_test/order.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.155103297 seconds.
+Finished in 0.091869974 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.45 tests/s, 0.00 assertions/s
+10.88 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/saleslead
 Started
 E
 ===============================================================================
-Error: test_create_Saleslead(Saleslead):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_Saleslead(Saleslead): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/saleslead.rb:9:in `setup'
 ===============================================================================
 E
@@ -427,26 +352,21 @@ smoke_test/saleslead.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.162089241 seconds.
+Finished in 0.099957737 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.17 tests/s, 0.00 assertions/s
+10.00 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/invoice
 Started
 E
 ===============================================================================
-Error: test_create_invoice(Invoice):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_invoice(Invoice): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/invoice.rb:9:in `setup'
 ===============================================================================
 E
@@ -456,26 +376,21 @@ smoke_test/invoice.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.154600008 seconds.
+Finished in 0.089911358 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.47 tests/s, 0.00 assertions/s
+11.12 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/product
 Started
 E
 ===============================================================================
-Error: test_create_product(Product):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_product(Product): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/product.rb:9:in `setup'
 ===============================================================================
 E
@@ -485,26 +400,21 @@ smoke_test/product.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.162068493 seconds.
+Finished in 0.089698072 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.17 tests/s, 0.00 assertions/s
+11.15 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/materialreq
 Started
 E
 ===============================================================================
-Error: test_create_materialreq(Login):
-  Selenium::WebDriver::Error::WebDriverError:  Unable to find Mozilla geckodriver. Please download the server from https://github.com/mozilla/geckodriver/releases and place it somewhere on your PATH. More info at https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver.
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:59:in `binary_path'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/service.rb:49:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/firefox/w3c_bridge.rb:31:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver/common/driver.rb:52:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.0.5/lib/selenium/webdriver.rb:82:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_materialreq(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "/home/bharath/Desktop/shopvox_projects/jobvox_sst/chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/materialreq.rb:9:in `setup'
 ===============================================================================
 E
@@ -514,26 +424,21 @@ smoke_test/materialreq.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 0.157326973 seconds.
+Finished in 0.089691239 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-6.36 tests/s, 0.00 assertions/s
+11.15 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/jobboard
 Started
 E
 ===============================================================================
-Error: test_create_jobboard(Login): Selenium::WebDriver::Error::WebDriverError: unable to obtain stable firefox connection in 60 seconds (127.0.0.1:7055)
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:90:in `connect_until_stable'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:55:in `block in launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/socket_lock.rb:43:in `locked'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:51:in `launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/bridge.rb:43:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver.rb:84:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_jobboard(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/jobboard.rb:9:in `setup'
 ===============================================================================
 E
@@ -543,26 +448,21 @@ smoke_test/jobboard.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 65.58430763 seconds.
+Finished in 0.090215935 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-0.02 tests/s, 0.00 assertions/s
+11.08 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/login
 Started
 E
 ===============================================================================
-Error: test_login_with_correct_creds(Login): Selenium::WebDriver::Error::WebDriverError: unable to obtain stable firefox connection in 60 seconds (127.0.0.1:7055)
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:90:in `connect_until_stable'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:55:in `block in launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/socket_lock.rb:43:in `locked'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:51:in `launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/bridge.rb:43:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver.rb:84:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_login_with_correct_creds(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/login.rb:9:in `setup'
 ===============================================================================
 E
@@ -572,26 +472,21 @@ smoke_test/login.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 65.605289644 seconds.
+Finished in 0.089708625 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-0.02 tests/s, 0.00 assertions/s
+11.15 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/vendor_contact
 Started
 E
 ===============================================================================
-Error: test_create_vendor(VendorContact): Selenium::WebDriver::Error::WebDriverError: unable to obtain stable firefox connection in 60 seconds (127.0.0.1:7055)
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:90:in `connect_until_stable'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:55:in `block in launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/socket_lock.rb:43:in `locked'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:51:in `launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/bridge.rb:43:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver.rb:84:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_vendor(VendorContact): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/vendor_contact.rb:9:in `setup'
 ===============================================================================
 E
@@ -601,26 +496,21 @@ smoke_test/vendor_contact.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 60.369866507 seconds.
+Finished in 0.090191207 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-0.02 tests/s, 0.00 assertions/s
+11.09 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/reports
 Started
 E
 ===============================================================================
-Error: test_load_reports(Product): Selenium::WebDriver::Error::WebDriverError: unable to obtain stable firefox connection in 60 seconds (127.0.0.1:7055)
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:90:in `connect_until_stable'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:55:in `block in launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/socket_lock.rb:43:in `locked'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:51:in `launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/bridge.rb:43:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver.rb:84:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_load_reports(Product): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/reports.rb:9:in `setup'
 ===============================================================================
 E
@@ -630,26 +520,21 @@ smoke_test/reports.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 60.371279451 seconds.
+Finished in 0.089782971 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-0.02 tests/s, 0.00 assertions/s
+11.14 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/purchaseorder
 Started
 E
 ===============================================================================
-Error: test_create_purchaseorder(Po): Selenium::WebDriver::Error::WebDriverError: unable to obtain stable firefox connection in 60 seconds (127.0.0.1:7055)
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:90:in `connect_until_stable'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:55:in `block in launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/socket_lock.rb:43:in `locked'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/launcher.rb:51:in `launch'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/firefox/bridge.rb:43:in `initialize'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `new'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/driver.rb:53:in `for'
-/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver.rb:84:in `for'
-smoke_test/../test_helper.rb:77:in `get_driver'
+Error: test_create_purchaseorder(Po): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
 smoke_test/purchaseorder.rb:9:in `setup'
 ===============================================================================
 E
@@ -659,14 +544,23 @@ smoke_test/purchaseorder.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 60.322338669 seconds.
+Finished in 0.090357611 seconds.
 ------
 1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
-0.02 tests/s, 0.00 assertions/s
+11.07 tests/s, 0.00 assertions/s
 Loaded suite smoke_test/tasks
 Started
+E
+===============================================================================
+Error: test_create_task(Login): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
+smoke_test/tasks.rb:9:in `setup'
+===============================================================================
 E
 ===============================================================================
 Error: test_create_task(Login): NoMethodError: undefined method `quit' for nil:NilClass
@@ -674,9 +568,1188 @@ smoke_test/tasks.rb:15:in `teardown'
 ===============================================================================
 
 
-Finished in 15.421308158 seconds.
+Finished in 0.091812997 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+10.89 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
+smoke_test/quote.rb:9:in `setup'
+===============================================================================
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/quote.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.088828378 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+11.26 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/material
+Started
+E
+===============================================================================
+Error: test_create_material(Product): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
+smoke_test/material.rb:9:in `setup'
+===============================================================================
+E
+===============================================================================
+Error: test_create_material(Product): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/material.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.089678396 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+11.15 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/customer
+Started
+E
+===============================================================================
+Error: test_create_customer(Customer): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
+smoke_test/customer.rb:9:in `setup'
+===============================================================================
+E
+===============================================================================
+Error: test_create_customer(Customer): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/customer.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.091550291 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+10.92 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/materialreceipt
+Started
+E
+===============================================================================
+Error: test_create_mr(Po): Selenium::WebDriver::Error::WebDriverError: not executable: "./chromedriver"
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/platform.rb:153:in `assert_executable'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome/service.rb:46:in `executable_path='
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/chrome.rb:31:in `driver_path='
+smoke_test/../test_helper.rb:78:in `get_driver'
+smoke_test/materialreceipt.rb:9:in `setup'
+===============================================================================
+E
+===============================================================================
+Error: test_create_mr(Po): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/materialreceipt.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.089451462 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+11.18 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login): NoMethodError: undefined method `[]' for nil:NilClass
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/bridge_helper.rb:47:in `element_id_from'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:599:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/jobboard.rb:21:in `test_create_jobboard'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_jobboard
+  => 21:     login
+     22:     sleep 10
+     23:     @driver.find_element(:link_text, "Jobs").click
+     24:     sleep 5    
+===============================================================================
+
+
+Finished in 6.40541687 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.16 tests/s, 0.16 assertions/s
+Loaded suite smoke_test/login
+Started
+E
+===============================================================================
+Error: test_login_with_correct_creds(Login):
+  Selenium::WebDriver::Error::UnknownError: unknown error: updateWindow is not defined
+  JavaScript stack:
+  ReferenceError: updateWindow is not defined
+      at eval (eval at executeAsyncScript (unknown source), <anonymous>:2:9)
+      at executeAsyncScript (<anonymous>:314:26)
+      at apply.state (<anonymous>:330:29)
+      at callFunction (<anonymous>:222:33)
+      at apply.state (<anonymous>:232:23)
+      at <anonymous>:233:3
+      at Object.InjectedScript._evaluateOn (<anonymous>:875:140)
+      at Object.InjectedScript._evaluateAndWrap (<anonymous>:808:34)
+      at Object.InjectedScript.evaluate (<anonymous>:664:21)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-106-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:252:in `maximizeWindow'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/window.rb:117:in `maximize'
+smoke_test/../test_helper.rb:84:in `get_driver'
+smoke_test/login.rb:9:in `setup'
+===============================================================================
+
+
+Finished in 1.515933615 seconds.
 ------
 0 tests, 0 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
 0% passed
 ------
 0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login): NoMethodError: undefined method `[]' for nil:NilClass
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/bridge_helper.rb:47:in `element_id_from'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:599:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/jobboard.rb:21:in `test_create_jobboard'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_jobboard
+  => 21:     login
+     22:     sleep 10
+     23:     @driver.find_element(:link_text, "Jobs").click
+     24:     sleep 5    
+===============================================================================
+
+
+Finished in 5.186611961 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.19 tests/s, 0.19 assertions/s
+Loaded suite smoke_test/login
+Started
+E
+===============================================================================
+Error: test_login_with_correct_creds(Login): NoMethodError: undefined method `[]' for nil:NilClass
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/bridge_helper.rb:47:in `element_id_from'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:599:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/login.rb:22:in `test_login_with_correct_creds'
+     19: # Test to login with valid credentials
+     20:   def test_login_with_correct_creds
+     21:     @driver.get(@base_url + "/")
+  => 22:     @driver.find_element(:id, "email").clear
+     23:     @driver.find_element(:id, "email").send_keys users(:laxmi)["email"]
+     24:     @driver.find_element(:id, "password").clear
+     25:     @driver.find_element(:id, "password").send_keys users(:laxmi)["password"] 
+===============================================================================
+
+
+Finished in 3.507992113 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.29 tests/s, 0.29 assertions/s
+Loaded suite smoke_test/vendor_contact
+Started
+E
+===============================================================================
+Error: test_create_vendor(VendorContact): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/vendor_contact.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.699083241 seconds.
+------
+0 tests, 0 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 17.760169931 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.06 tests/s, 0.06 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression //i[@name = 'suitcase'] because of the following error:
+  TypeError: Failed to execute 'createNSResolver' on 'Document': parameter 1 is not of type 'Node'.
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 30.94343455 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.03 tests/s, 0.03 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 21.880702435 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression //i[@name = 'suitcase'] because of the following error:
+  TypeError: Failed to execute 'createNSResolver' on 'Document': parameter 1 is not of type 'Node'.
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 43.692217423 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 21.469161424 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 15.459314063 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.06 tests/s, 0.06 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 28.426272712 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.04 tests/s, 0.04 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression //i[@name = 'suitcase'] because of the following error:
+  TypeError: Failed to execute 'createNSResolver' on 'Document': parameter 1 is not of type 'Node'.
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:596:in `find_element_by'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/search_context.rb:61:in `find_element'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:22:in `test_create_quote'
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+     21:     login
+  => 22:     customer_Name = create_customer
+     23:     sleep 2
+     24:     product_Name = create_product
+     25:     sleep 5
+===============================================================================
+
+
+Finished in 19.945069188 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (238, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 5
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     product_Name = create_product
+     26:     sleep 5
+===============================================================================
+
+
+Finished in 27.834771799 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.04 tests/s, 0.04 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (238, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 10
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     product_Name = create_product
+     26:     sleep 5
+===============================================================================
+
+
+Finished in 21.649156604 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (55, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 15
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     product_Name = create_product
+     26:     sleep 5
+===============================================================================
+
+
+Finished in 38.166515984 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.03 tests/s, 0.03 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: updateWindow is not defined
+  JavaScript stack:
+  ReferenceError: updateWindow is not defined
+      at eval (eval at executeAsyncScript (unknown source), <anonymous>:2:9)
+      at executeAsyncScript (<anonymous>:314:26)
+      at apply.state (<anonymous>:330:29)
+      at callFunction (<anonymous>:222:33)
+      at apply.state (<anonymous>:232:23)
+      at <anonymous>:233:3
+      at Object.InjectedScript._evaluateOn (<anonymous>:875:140)
+      at Object.InjectedScript._evaluateAndWrap (<anonymous>:808:34)
+      at Object.InjectedScript.evaluate (<anonymous>:664:21)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:252:in `maximizeWindow'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/window.rb:117:in `maximize'
+smoke_test/../test_helper.rb:84:in `get_driver'
+smoke_test/quote.rb:9:in `setup'
+===============================================================================
+F
+===============================================================================
+Failure: test_create_quote(Quote)
+smoke_test/quote.rb:16:in `teardown'
+<[]> expected but was
+<nil>
+===============================================================================
+
+
+Finished in 10.782719915 seconds.
+------
+1 tests, 1 assertions, 1 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.09 tests/s, 0.09 assertions/s
+Loaded suite smoke_test/order
+Started
+E
+===============================================================================
+Error: test_create_order(Order):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (55, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/order.rb:23:in `test_create_order'
+     20:   def test_create_order
+     21:     login
+     22:     sleep 10
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
+     26:     @driver.find_element(:link_text, "New Sales Order").click
+===============================================================================
+
+
+Finished in 21.172043472 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/product
+Started
+E
+===============================================================================
+Error: test_create_product(Product):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (105, 20). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/product.rb:23:in `test_create_product'
+     20:   def test_create_product
+     21:     login
+     22:     sleep 5
+  => 23:     @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
+     24:     @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
+     25:     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
+     26:     @driver.find_element(:xpath, "//a[@ui-sref='products']").click
+===============================================================================
+
+
+Finished in 21.385109499 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (238, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 47.176820108 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 964)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 107.070537425 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 964)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 161.171742899 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: updateWindow is not defined
+  JavaScript stack:
+  ReferenceError: updateWindow is not defined
+      at eval (eval at executeAsyncScript (unknown source), <anonymous>:2:9)
+      at executeAsyncScript (<anonymous>:314:26)
+      at apply.state (<anonymous>:330:29)
+      at callFunction (<anonymous>:222:33)
+      at apply.state (<anonymous>:232:23)
+      at <anonymous>:233:3
+      at Object.InjectedScript._evaluateOn (<anonymous>:875:140)
+      at Object.InjectedScript._evaluateAndWrap (<anonymous>:808:34)
+      at Object.InjectedScript.evaluate (<anonymous>:664:21)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:252:in `maximizeWindow'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/window.rb:117:in `maximize'
+smoke_test/../test_helper.rb:84:in `get_driver'
+smoke_test/quote.rb:9:in `setup'
+===============================================================================
+F
+===============================================================================
+Failure: test_create_quote(Quote)
+smoke_test/quote.rb:16:in `teardown'
+<[]> expected but was
+<nil>
+===============================================================================
+
+
+Finished in 1.881224481 seconds.
+------
+1 tests, 1 assertions, 1 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.53 tests/s, 0.53 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 826)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 149.181746123 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+Element : //select[@class='form-control ng-pristine ng-valid ng-touched'] not found
+Element : //select[@class='ng-isolate-scope'] not found
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 964)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 166.098057251 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: updateWindow is not defined
+  JavaScript stack:
+  ReferenceError: updateWindow is not defined
+      at eval (eval at executeAsyncScript (unknown source), <anonymous>:2:9)
+      at executeAsyncScript (<anonymous>:314:26)
+      at apply.state (<anonymous>:330:29)
+      at callFunction (<anonymous>:222:33)
+      at apply.state (<anonymous>:232:23)
+      at <anonymous>:233:3
+      at Object.InjectedScript._evaluateOn (<anonymous>:875:140)
+      at Object.InjectedScript._evaluateAndWrap (<anonymous>:808:34)
+      at Object.InjectedScript.evaluate (<anonymous>:664:21)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:252:in `maximizeWindow'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/window.rb:117:in `maximize'
+smoke_test/../test_helper.rb:84:in `get_driver'
+smoke_test/quote.rb:9:in `setup'
+===============================================================================
+F
+===============================================================================
+Failure: test_create_quote(Quote)
+smoke_test/quote.rb:16:in `teardown'
+<[]> expected but was
+<nil>
+===============================================================================
+
+
+Finished in 2.380057458 seconds.
+------
+1 tests, 1 assertions, 1 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.42 tests/s, 0.42 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 964)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 154.929976418 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (238, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:177:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 44.107053455 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 876)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 150.104442856 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (1228, 964)
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/../test_helper.rb:214:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 30
+  => 23:     customer_Name = create_customer
+     24:     sleep 30
+     25:     product_Name = create_product
+     26:     sleep 30
+===============================================================================
+
+
+Finished in 149.784731733 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s

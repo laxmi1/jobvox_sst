@@ -68,13 +68,15 @@ end
 
 # get webdriver object
 def get_driver
-    profile = Selenium::WebDriver::Firefox::Profile.new
-    profile['browser.download.dir'] = Dir.pwd+"/downloads"
-    profile['browser.download.folderList'] = 2
-    profile['browser.helperApps.neverAsk.saveToDisk'] = "application/octet-stream,application/pdf"
-    profile['pdfjs.disabled'] = true
-    profile['pdfjs.firstRun'] = false
-    @driver= Selenium::WebDriver.for :firefox, :profile => profile
+    # profile = Selenium::WebDriver::Firefox::Profile.new
+    # profile['browser.download.dir'] = Dir.pwd+"/downloads"
+    # profile['browser.download.folderList'] = 2
+    # profile['browser.helperApps.neverAsk.saveToDisk'] = "application/octet-stream,application/pdf"
+    # profile['pdfjs.disabled'] = true
+    # profile['pdfjs.firstRun'] = false
+    # @driver= Selenium::WebDriver.for :firefox, :profile => profile
+    Selenium::WebDriver::Chrome.driver_path = "./chromedriver"
+    @driver = Selenium::WebDriver.for :chrome
     @base_url = APPLICATION_CONFIG["base_url"] 
     @admin_url = APPLICATION_CONFIG["admin_url"] 
     @new_account_url = APPLICATION_CONFIG["new_account_url"]
@@ -174,7 +176,7 @@ end
 def create_customer
     @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
-    sleep 5
+    sleep 25
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
 
     @driver.find_element(:link_text, "New customer").click
@@ -185,43 +187,43 @@ def create_customer
     begin
       @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
       puts "Legal name available"
-      sleep 5
+      sleep 15
     rescue => e
       puts "Legal name not available"
     end
     begin
       contact_Name = "Contact "+time
     @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
-    @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
+    @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "bharath@techvoxinc.com"
            puts "Contact available"
-           sleep 5
+           sleep 15
        rescue => e
            puts "Contact is not available"
 end
     
     # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
     industry  = "//select[@name='categoryId']"
-    industry_index = "1"
+    industry_index = "2"
     getSelect_by_index(industry,industry_index)
-
+    sleep 25
 
     leadSource  = "//select[@name='leadSourceId']"
-    leadSource_index = "1"
+    leadSource_index = "2"
     getSelect_by_index(leadSource,leadSource_index)
-
+    sleep 25
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-    sleep 5
+    sleep 15
     puts "created customer with name: "+customer_Name
   return customer_Name
   end
 
 def create_product
-    sleep 3
+    sleep 10
     @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
     @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
     @driver.find_element(:xpath, "//a[@ui-sref='products']").click
-    sleep 2
+    sleep 10
     @driver.find_element(:link_text, "New Product").click
     
     time = get_Present
@@ -230,14 +232,14 @@ def create_product
     begin
     @driver.find_element(:xpath, "//textarea[@name='product[description]']").send_keys "Test description"        
     puts "description available"
-    sleep 2
+    sleep 10
     rescue => e
     puts "description not available"       
     end
     type = "//select[@name='product[product_type_id]']"
     type_index = "3"
     getSelect_by_index(type,type_index)
-    sleep 2
+    sleep 10
     category = "//select[@name='product[category_id]']"
     category_index = "2"
     getSelect_by_index(category,category_index)
