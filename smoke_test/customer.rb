@@ -19,11 +19,12 @@ class Customer < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_customer
     login
+    sleep 15
+    @driver.find_element(:xpath, "//span[@class='ng-binding']".click
+    #@driver.find_element(:xpath, "//i[@name ='suitcase']").click
     sleep 10
-    @driver.find_element(:link_text, "Customers & Vendors").click
-    # @driver.find_element(:xpath, "//i[@name ='suitcase']").click
-    @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
-    sleep 5
+    @driver.find_element(:link_text, "companies").click
+    sleep 10
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
 
     @driver.find_element(:link_text, "New customer").click

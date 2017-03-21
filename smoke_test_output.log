@@ -1753,3 +1753,108 @@ Finished in 149.784731733 seconds.
 0% passed
 ------
 0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/customer
+Started
+E
+===============================================================================
+Error: test_create_customer(Customer):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (317, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/customer.rb:23:in `test_create_customer'
+     20:   def test_create_customer
+     21:     login
+     22:     sleep 10
+  => 23:     @driver.find_element(:link_text, "Customers & Vendors").click
+     24:     # @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+     25:     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+     26:     sleep 5
+===============================================================================
+
+
+Finished in 21.392990413 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/customer
+Started
+E
+===============================================================================
+Error: test_create_customer(Customer):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (317, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/customer.rb:23:in `test_create_customer'
+     20:   def test_create_customer
+     21:     login
+     22:     sleep 15
+  => 23:     @driver.find_element(:link_text, "Customers & Vendors").click
+     24:     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+     25:     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+     26:     sleep 5
+===============================================================================
+
+
+Finished in 24.098884421 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.04 tests/s, 0.04 assertions/s
+Loaded suite smoke_test/customer
+Started
+E
+===============================================================================
+Error: test_create_customer(Customer):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element is not clickable at point (134, 66). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=48.0.2564.116)
+    (Driver info: chromedriver=2.5.231713,platform=Linux 3.13.0-113-generic x86)
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:70:in `assert_ok'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `new'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:78:in `create_response'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/default.rb:90:in `request'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:649:in `raw_execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:627:in `execute'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/remote/bridge.rb:389:in `clickElement'
+/home/bharath/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-2.53.4/lib/selenium/webdriver/common/element.rb:73:in `click'
+smoke_test/customer.rb:23:in `test_create_customer'
+     20:   def test_create_customer
+     21:     login
+     22:     sleep 15
+  => 23:     @driver.find_element(:link_text, "Customers & Vendors").click
+     24:     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
+     25:     sleep 10
+     26:     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+===============================================================================
+
+
+Finished in 21.637813043 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
