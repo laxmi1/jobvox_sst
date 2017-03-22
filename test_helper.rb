@@ -202,19 +202,18 @@ def create_customer
 end
     
     # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
-    industry  = "//select[@name='categoryId']"
-    industry_index = "2"
-    getSelect_by_index(industry,industry_index)
-    sleep 25
+    industry  = "//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[1]/vox-select-field/div/select"
+     industry_index = "2"
+     getSelect_by_index(industry,industry_index)
 
-    leadSource  = "//select[@name='leadSourceId']"
+    leadSource  = ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[2]/vox-select-field/div/select"
     leadSource_index = "2"
     getSelect_by_index(leadSource,leadSource_index)
-    sleep 25
+
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-    sleep 15
+    sleep 5
     puts "created customer with name: "+customer_Name
-  return customer_Name
+
   end
 
 def create_product

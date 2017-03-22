@@ -19,18 +19,14 @@ class Quote < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_quote
     login
-    sleep 30
-    customer_Name = create_customer
-    sleep 30
-    product_Name = create_product
-    sleep 30
-    @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
-    @driver.find_element(:link_text, "New Quote").click
-    sleep 30
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
     sleep 20
-    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    @driver.find_element(:xpath, "//i[@name='plus-circle']").click
+    @driver.find_element(:link_text, "New Quote").click
+    sleep 10
+    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+    sleep 10
+    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys "Bharath"
+    @driver.find_element(:xpath, "//div[@class='ng-binding']").click
     puts "customer selected in Quote page"
     begin
     time = get_Present
