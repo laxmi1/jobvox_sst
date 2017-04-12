@@ -174,9 +174,11 @@ end
 #   end
   
 def create_customer
-    @driver.find_element(:xpath, "//i[@name = 'suitcase']").click
+    sleep 15
+    # @driver.find_element(:link_text, "Customers & Vendors").click
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[4]/a/span").click
     @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
-    sleep 25
+    sleep 5
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
 
     @driver.find_element(:link_text, "New customer").click
@@ -187,22 +189,22 @@ def create_customer
     begin
       @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
       puts "Legal name available"
-      sleep 15
     rescue => e
       puts "Legal name not available"
     end
+
     begin
       contact_Name = "Contact "+time
-    @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
-    @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "bharath@techvoxinc.com"
+      @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
+      @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
            puts "Contact available"
-           sleep 15
+           sleep 5
        rescue => e
            puts "Contact is not available"
-end
+    end
     
     # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
-    industry  = "//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[1]/vox-select-field/div/select"
+     industry  = "//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[1]/vox-select-field/div/select"
      industry_index = "2"
      getSelect_by_index(industry,industry_index)
 
@@ -211,10 +213,11 @@ end
     getSelect_by_index(leadSource,leadSource_index)
 
     @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-    sleep 5
+    sleep 10
     puts "created customer with name: "+customer_Name
+    return customer_Name
 
-  end
+end
 
 def create_product
     sleep 10

@@ -34,20 +34,19 @@ class Customer < Test::Unit::TestCase
     begin
       @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
       puts "Legal name available"
-      sleep 5
     rescue => e
       puts "Legal name not available"
     end
 
     begin
       contact_Name = "Contact "+time
-    @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
-    @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
+      @driver.find_element(:xpath, "//div[1][@class='col-sm-6']/vox-text-field/div/div/input").send_keys contact_Name
+      @driver.find_element(:xpath, "//div[2][@class='col-sm-6']/vox-text-field/div/div/input").send_keys "laxmi@techvoxinc.com"
            puts "Contact available"
            sleep 5
        rescue => e
            puts "Contact is not available"
-end
+    end
     
     # @driver.find_element(:xpath, "//div[1][@class='col-sm-9 ng-scope']/phone-field/div/div").send_keys "9848071234"
      industry  = "//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[1]/vox-select-field/div/select"
@@ -62,7 +61,7 @@ end
     sleep 5
     puts "created customer with name: "+customer_Name
 
-  end
+end
 
   
 # To find the element and throws an error if element is not found.

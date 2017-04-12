@@ -19,14 +19,17 @@ class Quote < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_quote
     login
-    sleep 20
+    sleep 10
+    customer_Name = create_customer
+    sleep 5
     @driver.find_element(:xpath, "//i[@name='plus-circle']").click
     @driver.find_element(:link_text, "New Quote").click
-    sleep 10
+    sleep 5
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
-    sleep 10
-    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys "Bharath"
-    @driver.find_element(:xpath, "//div[@class='ng-binding']").click
+    sleep 5
+    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
+    sleep 5
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     puts "customer selected in Quote page"
     begin
     time = get_Present
@@ -56,15 +59,15 @@ class Quote < Test::Unit::TestCase
     rescue => e
     puts "Not Available"  
     end
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-
-    puts "Created "+quote_Name
-    puts "Adding Line item With"+product_name
-
-    @driver.find_element(:link_text, "Add New Item").click
+    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
     sleep 5
-    @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
-    @driver.find_element(:id, "//div[@id='ui-select-choices-row-1-0']").click
+    #puts "Created "+quote_Name
+    #puts "Adding Line item With"+product_name
+
+   # @driver.find_element(:link_text, "Add New Item").click
+    sleep 5
+   # @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+    #@driver.find_element(:id, "//div[@id='ui-select-choices-row-1-0']").click
        
   end
 

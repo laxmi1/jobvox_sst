@@ -21,6 +21,7 @@ class Order < Test::Unit::TestCase
     login
     sleep 10
     customer_Name = create_customer
+    puts customer_Name
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Sales Order").click
