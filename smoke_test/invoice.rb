@@ -19,16 +19,17 @@ class Invoice < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_invoice
     login
-    sleep 5
+    sleep 10
     customer_Name = create_customer
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Invoice").click
     sleep 5
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
-    sleep 2
+    sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    sleep 2
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     puts "customer selected in invoice page"
     
     begin
@@ -59,8 +60,8 @@ class Invoice < Test::Unit::TestCase
   rescue => e
     puts "Not Available"
   end
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-    sleep 2
+    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
+    sleep 5
     puts "Created "+invoice_Name
        
   end

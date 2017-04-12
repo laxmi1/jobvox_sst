@@ -21,7 +21,6 @@ class Order < Test::Unit::TestCase
     login
     sleep 10
     customer_Name = create_customer
-    puts customer_Name
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Sales Order").click
@@ -30,7 +29,7 @@ class Order < Test::Unit::TestCase
     sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     sleep 2
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     puts "customer selected in order page"
     begin
     time = get_Present
@@ -61,8 +60,8 @@ class Order < Test::Unit::TestCase
     puts "Not Available"  
     sleep 5
     end
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-    sleep 2
+    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
+    sleep 5
     puts "Created "+order_Name
        
   end
