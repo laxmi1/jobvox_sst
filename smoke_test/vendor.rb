@@ -19,6 +19,7 @@ class Vendor < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_vendor
     login
+    sleep 15
     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='vendors']").click
     @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
@@ -26,7 +27,7 @@ class Vendor < Test::Unit::TestCase
     time = get_Present
     vendor_Name = "Test vendor "+ time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys vendor_Name
-    @driver.find_element(:xpath, "//input[@placeholder='Legal name']").send_keys "Abhi"
+    @driver.find_element(:xpath, "//input[@placeholder='Legal name']").send_keys "Bharath"
 
     terms = "//select[@name='termCodeId']"
     terms_index = "2"
@@ -39,8 +40,8 @@ class Vendor < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='jsmith@acme.com']").send_keys "abhinav@ahsgjashdkjf.com"
     # @driver.find_element(:xpath, "//input[@placeholder='(55) 5555-5555']").send_keys "9848032919"
 
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-
+    @driver.find_element(:xpath, "//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[2]/div/submit-button/button").send_keys :enter 
+     sleep 5
      puts "created vendor with name: "+vendor_Name
     
   end
