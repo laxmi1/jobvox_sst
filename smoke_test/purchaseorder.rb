@@ -42,7 +42,7 @@ class Po < Test::Unit::TestCase
 
     puts "vendor selected in PO page"
 
-    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[2]/div/section[3]").send_keys :enter 
     sleep 3
 
     puts "Created "+po_Name
