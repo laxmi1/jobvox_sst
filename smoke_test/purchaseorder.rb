@@ -38,7 +38,7 @@ class Po < Test::Unit::TestCase
     sleep 5
     @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
     sleep 5
-    @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-0']/a/span/div/span").click
+    @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-6']/a/span/div").click
 
     puts "vendor selected in PO page"
 
