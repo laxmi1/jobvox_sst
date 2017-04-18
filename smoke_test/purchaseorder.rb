@@ -34,15 +34,16 @@ class Po < Test::Unit::TestCase
     tax_index = "2"
     getSelect_by_index(tax,tax_index)
     sleep 5
-    @driver.find_element(:xpath, "//*[@id='xykl']/div/span/span[1]").click
-    sleep 5
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[2]/div/section[3]/div/div[1]/vox-dynamic-select/div/div").click
+    sleep 2
     @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
-    sleep 5
-    @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-6']/a/span/div").click
+    @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-0']/a/span/div/span").click
+    sleep 2
+    purchase orders create
 
     puts "vendor selected in PO page"
 
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[2]/div/section[3]").send_keys :enter 
+    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 3
 
     puts "Created "+po_Name
