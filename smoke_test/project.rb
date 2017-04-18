@@ -29,15 +29,14 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//span[@class='ui-select-placeholder text-muted ng-binding']").click
     sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer']").send_keys customer_Name
-    sleep 4
-    @driver.find_element(:xpath, "//a[@id='rq2i']").click
-    
+    sleep 2
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div").click 
     time = get_Present
     project_Name = "Project for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys project_Name
     @driver.find_element(:xpath, "//textarea[@placeholder='About this Project']").send_keys "This project is created through Selenium Automation"
     
-    leadSource  = ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[8]/div[1]/div[2]/vox-select-field/div/select"
+    leadSource  = "//select[@name='leadSource']"
     leadSource_index = "2"
     getSelect_by_index(leadSource,leadSource_index)
     sleep 2

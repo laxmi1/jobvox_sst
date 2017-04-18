@@ -19,15 +19,15 @@ class Login < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_task
     login
-    sleep 10
-    @driver.find_element(:link_text, "Tasks").click
-    sleep 5    
+    sleep 20
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[10]/a/i").click
+    sleep 5 
+    @driver.find_element(:xpath, "//input[@ng-model='model.bindable']").click 
+    sleep 2
     time = get_Present
     task_Name = "task for "+time
     @driver.find_element(:xpath, "//input[@placeholder='Type your task here...']").send_keys task_Name
     @driver.find_element(:xpath, "//div[@placeholder='Task description...']").send_keys "Test selenium description for task"
-    sleep 2
-    @driver.find_element(:xpath, "//input[@ng-model='model.bindable']").click
     sleep 2
     assignto = "//select[@name='assignedToId']"
     assignto_index = "2"

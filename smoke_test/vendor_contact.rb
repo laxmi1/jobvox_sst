@@ -19,6 +19,7 @@ class VendorContact < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_vendor
     login
+    sleep 10
     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
     @driver.find_element(:xpath, "//a[@ui-sref='vendor_contacts']").click
     @driver.find_element(:xpath, "//button[@tooltip='Actions']").click

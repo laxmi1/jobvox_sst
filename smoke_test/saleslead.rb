@@ -19,21 +19,21 @@ class Saleslead < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_Saleslead
     login
-    sleep 10
+    sleep 20
     customer_Name = create_customer
+    sleep 15
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[6]/a/i").click
     sleep 10
-    @driver.find_element(:link_text, "Sales Leads").click
-    @driver.find_element(:link_text, "New Sales lead").click
-    
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div/div[1]/div/div[2]/a[3]/i").click
+    sleep 5
     time = get_Present
     saleslead_Name = "sales lead for "+time
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys saleslead_Name
-
     @driver.find_element(:xpath, "//textarea[@placeholder='Details']").send_keys "Test sales lead details for automation selenium"
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
     sleep 2
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div").click
     puts "customer selected in sales lead page"
 
     salesrep = "//select[@name='salesRepId']"
