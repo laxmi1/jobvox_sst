@@ -19,8 +19,8 @@ class Product < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_product
     login
-    sleep 5
-    @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
+    sleep 15
+    @driver.find_element(:xpath, "//div[@id='account-name']/a").click
     @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
     @driver.find_element(:xpath, "//a[@ui-sref='products']").click
@@ -65,9 +65,7 @@ class Product < Test::Unit::TestCase
     
     @driver.find_element(:xpath, "//input[@class='button']").click
     sleep 5
-     puts "Created "+product_name
-      
-       
+     puts "Created "+product_name   
   end
 
   

@@ -19,8 +19,8 @@ class Product < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_material
     login
-    sleep 10
-    @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
+    sleep 15
+    @driver.find_element(:xpath, "//div[@id='account-name']/a").click
     @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
     @driver.find_element(:xpath, "//a[@ui-sref='materials']").click
