@@ -36,11 +36,11 @@ class Order < Test::Unit::TestCase
     job_Name = "Job for "+customer_Name+" "+time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys job_Name
     begin
-      @driver.find_element(:xpath, "//textarea[@placeholder='Description']").send_keys "This job is created through Selenium Automation"
-      puts "Description is available"
-      sleep 5
+    @driver.find_element(:xpath, "//textarea[@placeholder='Description']").send_keys "This job is created through Selenium Automation"
+    puts "Description is available"
+    sleep 5
     rescue => e
-      puts "Description is not available"
+    puts "Description is not available"
     end
     
     @driver.find_element(:xpath, "//input[@placeholder='Quantity']").send_keys "2"
@@ -66,9 +66,8 @@ class Order < Test::Unit::TestCase
     puts "Details available"
     sleep 5
     rescue => e
-      puts "not available"
+    puts "not available"
     end
-
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
     puts "Created "+job_Name

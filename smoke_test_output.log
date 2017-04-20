@@ -1858,3 +1858,89 @@ Finished in 21.637813043 seconds.
 0% passed
 ------
 0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): ChildProcess::LaunchError: No such file or directory - ./chromedriver
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/childprocess-0.6.2/lib/childprocess/unix/fork_exec_process.rb:58:in `launch_process'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/childprocess-0.6.2/lib/childprocess/abstract_process.rb:82:in `start'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/chrome/service.rb:45:in `start_process'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/service.rb:73:in `block in start'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/socket_lock.rb:41:in `locked'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/service.rb:71:in `start'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/chrome/bridge.rb:48:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/driver.rb:61:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/driver.rb:61:in `for'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver.rb:87:in `for'
+smoke_test/../test_helper.rb:79:in `get_driver'
+smoke_test/quote.rb:9:in `setup'
+===============================================================================
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `quit' for nil:NilClass
+smoke_test/quote.rb:15:in `teardown'
+===============================================================================
+
+
+Finished in 0.093860802 seconds.
+------
+1 tests, 0 assertions, 0 failures, 2 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+10.65 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170420-151444
+customer selected in Quote page
+Available
+.
+
+Finished in 115.477690306 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170420-152925
+description available
+Created Product 20170420-153055
+customer selected in Quote page
+Available
+Created Quote for Customer 20170420-152925 20170420-153205
+Adding Line item WithProduct 20170420-153055
+Created line item
+.
+
+Finished in 268.361803787 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170420-153518
+description available
+Created Product 20170420-153608
+customer selected in Quote page
+Available
+Created Quote for Customer 20170420-153518 20170420-153720
+Adding Line item WithProduct 20170420-153608
+Created line item
+.
+
+Finished in 214.404247554 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s

@@ -46,7 +46,7 @@ class Po < Test::Unit::TestCase
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 3
     puts "Created "+po_Name
-    sleep 5
+    sleep 10
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/a").click
     sleep 3
     @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/section[1]/div/div[3]/vox-dynamic-select/div/div").click
