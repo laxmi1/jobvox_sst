@@ -21,9 +21,12 @@ class Po < Test::Unit::TestCase
     login
     sleep 20
     vendor_Name = create_vendor
-    sleep 10    
-    @driver.find_element(:xpath, "//i[@name='plus-circle']").click
-    @driver.find_element(:link_text, "New Purchase Order").click
+    sleep 15
+    product_name = create_product
+    sleep 15
+    @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
+    sleep 2
+    @driver.find_element(:xpath, "html/body/header/div/div[2]/div[2]/ul/li[6]/a").click
     sleep 3
     time = get_Present
     po_Name = "po for "+vendor_Name+" "+time
@@ -39,15 +42,22 @@ class Po < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
     @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-0']/a/span/div/span").click
     sleep 2
-    purchase orders create
-
     puts "vendor selected in PO page"
-
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 3
-
     puts "Created "+po_Name
-
+    sleep 5
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/a").click
+    sleep 3
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/section[1]/div/div[3]/vox-dynamic-select/div/div").click
+    sleep 2
+    @driver.find_element(:xpath, "//input[@placeholder='Search for Product...']").send_keys product_name
+    sleep 2
+    @driver.find_element(:xpath, "//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
+    sleep 2
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[3]/submit-button/button").click
+    puts "created line item"
+    sleep 5
   end
 
   

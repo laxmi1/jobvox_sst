@@ -19,23 +19,23 @@ class Login < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_jobboard
     login
-    sleep 10
-    @driver.find_element(:link_text, "Jobs").click
+    sleep 20
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[2]/a").click
     sleep 5    
-    @driver.find_element(:link_text, "Cards").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[1]").click
     sleep 4
-    @driver.find_element(:link_text, "List").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[2]").click
     sleep 4
-    @driver.find_element(:link_text, "Calendar").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[3]").click
     sleep 4
-    @driver.find_element(:link_text, "Workflow").click
-    sleep 5
-    @driver.find_element(:link_text, "Order Board").click
-    sleep 4
-    @driver.find_element(:link_text, "Workflow").click
-    sleep 5
-    @driver.find_element(:link_text, "Project Board").click
-    sleep 5
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[4]/i").click
+    sleep 6
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[5]/i").click
+    sleep 8
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[4]").click
+    sleep 8
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[6]").click
+    sleep 6
   end
 
   
