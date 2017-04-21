@@ -22,13 +22,16 @@ class Order < Test::Unit::TestCase
     sleep 10
     customer_Name = create_customer
     sleep 5
-    @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
-    @driver.find_element(:link_text, "New Sales Order").click
+    product_name = create_product
+    sleep 15
+    @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
+    sleep 2
+    @driver.find_element(:xpath, "html/body/header/div/div[2]/div[2]/ul/li[3]/a").click
     sleep 5
     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
     sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    sleep 2
+    sleep 5
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     puts "customer selected in order page"
     begin
@@ -60,9 +63,19 @@ class Order < Test::Unit::TestCase
     puts "Not Available"  
     sleep 5
     end
-    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter
     sleep 5
     puts "Created "+order_Name
+    puts "Adding Line item With"+product_name
+    @driver.find_element(:xpath, "//div[@class='add-new-line-item']").click
+    sleep 5
+    @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+    sleep 2
+    @driver.find_element(:xpath, "//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
+    sleep 2
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[4]/button").click
+    puts "Created line item"
+    sleep 5
        
   end
 

@@ -19,9 +19,9 @@ class Order < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_job
     login
-    sleep 10
+    sleep 15
     customer_Name = create_customer
-    sleep 5
+    sleep 10
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Job").click
     sleep 5
@@ -29,7 +29,7 @@ class Order < Test::Unit::TestCase
     sleep 2
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     sleep 2
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    @driver.find_element(:xpath, ".//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
     puts "customer selected in job page"
 
     time = get_Present
@@ -71,11 +71,9 @@ class Order < Test::Unit::TestCase
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
     puts "Created "+job_Name
-    sleep 5 
-       
+    sleep 5      
   end
 
-  
 # To find the element and throws an error if element is not found.
    def element_present?(how, what)
     @driver.find_element(how, what)

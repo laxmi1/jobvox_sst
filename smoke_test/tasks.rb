@@ -20,7 +20,7 @@ class Login < Test::Unit::TestCase
   def test_create_task
     login
     sleep 20
-    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[10]/a/i").click
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[9]/a/i").click
     sleep 5 
     @driver.find_element(:xpath, "//input[@ng-model='model.bindable']").click 
     sleep 2
@@ -28,6 +28,10 @@ class Login < Test::Unit::TestCase
     task_Name = "task for "+time
     @driver.find_element(:xpath, "//input[@placeholder='Type your task here...']").send_keys task_Name
     @driver.find_element(:xpath, "//div[@placeholder='Task description...']").send_keys "Test selenium description for task"
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/vox-task-form/div/form/div[3]/div[1]/date-picker/div/div/div/span").click
+    sleep 2
+    @driver.find_element(:xpath, "//button[@class='picker__button--today']").click
     sleep 2
     assignto = "//select[@name='assignedToId']"
     assignto_index = "2"
