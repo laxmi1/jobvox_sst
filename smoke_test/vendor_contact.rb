@@ -19,22 +19,28 @@ class VendorContact < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_vendor
     login
-    sleep 10
+    sleep 15
     @driver.find_element(:xpath, "//i[@name ='suitcase']").click
-    @driver.find_element(:xpath, "//a[@ui-sref='vendor_contacts']").click
-    @driver.find_element(:xpath, "//button[@tooltip='Actions']").click
-    @driver.find_element(:xpath, "//a[@href='#/vendor_contacts/new']").click
+    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[4]/ul/li[4]/a").click
+    @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[1]/div/div[1]/div[2]/ul/li[1]/a").click
     
     time = get_Present
     vendor_contact = "Vendor contact abhi "+ time
     @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys vendor_contact
 
-    vendor_option = "abhi"
-    @driver.find_element(:xpath, "//input[@placeholder='Select Vendor...']").send_keys vendor_option
-    @driver.find_element(:xpath, "//div[@ng-bind-html='item[itemAttribute] | highlight: $select.search']").click
-
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").click
-
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[1]/div/div[2]/vox-dynamic-select/div/div").click
+    sleep 2
+    @driver.find_element(:xpath, "//input[@placeholder='Select Vendor...']").send_keys "a"
+    sleep 5
+    @driver.find_element(:xpath, "//*[@id='ui-select-choices-row-0-0']/a/span/div/span").click
+    sleep 2
+    @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys "Vendor tile"+time
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[5]/div/div[1]/vox-text-field/div/div").send_keys "jssmith.acsdsda.com"
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[2]/div/submit-button/button").send_keys :enter
+    sleep 5
     puts "created vendor contact with name: "+vendor_contact
   end
 

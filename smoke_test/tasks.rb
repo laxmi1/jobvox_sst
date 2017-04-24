@@ -29,6 +29,7 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Type your task here...']").send_keys task_Name
     @driver.find_element(:xpath, "//div[@placeholder='Task description...']").send_keys "Test selenium description for task"
     sleep 2
+    # Due date selection for task
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/vox-task-form/div/form/div[3]/div[1]/date-picker/div/div/div/span").click
     sleep 2
     @driver.find_element(:xpath, "//button[@class='picker__button--today']").click

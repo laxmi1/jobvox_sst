@@ -19,8 +19,7 @@ class Login < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_materialreq
     login
-    sleep 10
-    sleep 10
+    sleep 15
     @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
     @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
@@ -67,7 +66,8 @@ class Login < Test::Unit::TestCase
     sleep 4
     @driver.find_element(:xpath, "//span[@class='ui-select-placeholder text-muted ng-binding']").click
     @driver.find_element(:xpath, "//input[@placeholder='Search for Material...']").send_keys material_name
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    sleep 2
+    @driver.find_element(:xpath, "//div[@id='ui-select-choices-row-1-0']/a/span/div").click
     sleep 2
     uom = "//select[@name='uomName']"
     uom_index = "2"

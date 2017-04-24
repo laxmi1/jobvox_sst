@@ -74,6 +74,7 @@ class Product < Test::Unit::TestCase
     sleep 2
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
     sleep 2
+    begin
     @driver.find_element(:link_text, "Jobs by Shipping Method").click
     sleep 2
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
@@ -81,7 +82,11 @@ class Product < Test::Unit::TestCase
     @driver.find_element(:link_text, "Jobs Custom Report").click
     sleep 2
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
+    puts "Available"
+    rescue => e
+    puts "Not Available"  
+    sleep 5
+    end
     @driver.find_element(:link_text, "Jobs Created from Sales Orders").click
     sleep 2
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
@@ -97,153 +102,149 @@ class Product < Test::Unit::TestCase
     @driver.find_element(:link_text, "Master Production Spreadsheets").click
     sleep 4
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
+    sleep 4
     @driver.find_element(:link_text, "Materials By Location").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Open Invoices").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Open Purchase Orders").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Order without Jobs").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Payment methods").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Payment types").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Payments By Sales Rep").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Purchase Order - Sales Orders/Invoices Report").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Products By Location").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Profit Margin By Transactions").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Purchase Orders Daily").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Purchase Orders Monthly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Purchase Orders Yearly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Quotes By Salesrep").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Quotes Daily").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Quotes Monthly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Quotes Yearly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Royalty Report").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Commission").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Order with Quotes").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Order without Quotes").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Orders Daily").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Orders Monthly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Orders Yearly").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Sales Tax").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Steps time").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Unapplied Payments").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Invoices").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided jobs").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Mat. Reqs").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Payments").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Projects").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Purchase Orders").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Quotes").click
-    sleep 2
-    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
-    sleep 2
-    @driver.find_element(:link_text, "Voided Sales Orders").click
-    sleep 2
+    sleep 4
     @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
     sleep 4
-    
-     
-       
+    @driver.find_element(:link_text, "Open Invoices").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Open Purchase Orders").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Order without Jobs").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Payment methods").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Payment types").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Payments By Sales Rep").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Purchase Order - Sales Orders/Invoices Report").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Products By Location").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Profit Margin By Transactions").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Purchase Orders Daily").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Purchase Orders Monthly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Purchase Orders Yearly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Quotes By Salesrep").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Quotes Daily").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Quotes Monthly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Quotes Yearly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Royalty Report").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Commission").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Order with Quotes").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Order without Quotes").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Orders Daily").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Orders Monthly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Orders Yearly").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Sales Tax").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Steps time").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Unapplied Payments").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Invoices").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided jobs").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Mat. Reqs").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Payments").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Projects").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Purchase Orders").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Quotes").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4
+    @driver.find_element(:link_text, "Voided Sales Orders").click
+    sleep 4
+    @driver.find_element(:xpath, "//i[@class='fa fa-eye']").click
+    sleep 4            
   end
-
-  
+    
 # To find the element and throws an error if element is not found.
    def element_present?(how, what)
     @driver.find_element(how, what)
