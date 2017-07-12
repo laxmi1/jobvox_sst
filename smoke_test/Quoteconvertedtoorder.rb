@@ -19,17 +19,20 @@ class Quote < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_quote
     login
+    sleep 15
     customer_Name = create_customer
-    sleep 2
-    product_Name = create_product
     sleep 5
-    @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
-    @driver.find_element(:link_text, "New Quote").click
-    sleep 5
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+    product_name = create_product
+    sleep 15
+    @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
     sleep 2
+    @driver.find_element(:xpath, "html/body/header/div/div[2]/div[2]/ul/li[2]/a").click
+    sleep 5
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[2]/div/section[1]/div/div[1]/vox-dynamic-select/div/div/div").click
+    sleep 5
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
-    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/div").click
+    sleep 5
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     puts "customer selected in Quote page"
     begin
     time = get_Present
@@ -59,57 +62,36 @@ class Quote < Test::Unit::TestCase
     rescue => e
     puts "Not Available"  
     end
-    @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
-
+    @driver.find_element(:xpath, "//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter 
+    sleep 5
     puts "Created "+quote_Name
-    #Add a line item for Quote
-def add_line_item(name=nil)
-      
-      getElement_xpath(".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[1]/div[2]/a").click
-
-      sleep(6)
-
-      getElement_xpath(".//*[@id='sc8j']/input[1]").click
-
-      product_name = Keys_CONFIG[".//*[@id='sc8j']/input[1]"]
-      if(name!=nil)
-        product_name = Keys_CONFIG[".//*[@id='sc8j']/input[1]"]+name
-      end
-
-      getElement_placeholder("//input[@placeholder='").send_keys product_name
-
-      sleep(6)
-
-      getElement_xpath("//a[@class='ui-select-choices-row-inner']/div/span").click
-
-      sleep(6)
-
-      getElement_xpath("html/body/div[1]/div/div/form/div[4]/button").click
-
-      sleep(6)
-   end
-
-   #This Quote conver to Sales order
-   getElement_xpath(".//*[@id='main-section']/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/button").click
-
-      getElement_text(".//*[@id='main-section']/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/ul/li[2]/a").click
-
-      getElement_xpath(".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[3]/div/submit-button/button").click
-
-      getElement_xpath("//div[@class='modal-footer ng-scope']/button[2]").click
-
-      sleep(6)
-
-      order_name = getElement_xpath(".//*[@id='0s3a']/div/span").text
-
-      check = compare(quote_name,order_name)
-
-      if(check)
-        puts "Quote not Converted to Order."
-      else
-        puts "Quote Converted to Order"
-      end
-      sleep(6)
+    puts "Adding Line item With"+product_name
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[1]/div[2]/a").click
+    sleep 5
+    @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+    sleep 2
+    @driver.find_element(:xpath, "//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
+    sleep 2
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[4]/a[2]").click
+    puts "Created line item"
+    sleep 5
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/button").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/ul/li[2]/a").click
+    sleep 5
+    begin
+    #due date
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[1]/div/section[1]/div/div[3]/date-picker/div/div/div/span/i").click
+    sleep 2
+    @driver.find_element(:xpath, "//button[@class='picker__button--today']").click
+    rescue => e
+    puts "Not Available"
+    sleep 2
+    end
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter
+    puts "Created SO from QT"
+    sleep 5
+  end
 
   
 # To find the element and throws an error if element is not found.

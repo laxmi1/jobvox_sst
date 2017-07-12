@@ -1944,3 +1944,355 @@ Finished in 214.404247554 seconds.
 100% passed
 ------
 0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `[]' for nil:NilClass
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/bridge_helper.rb:43:in `element_id_from'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:619:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/quote.rb:21:in `test_create_quote'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+  => 21:     login
+     22:     sleep 15
+     23:     customer_Name = create_customer
+     24:     sleep 5
+===============================================================================
+
+
+Finished in 14.651147235 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.07 tests/s, 0.07 assertions/s
+Loaded suite smoke_test/quote
+Started
+
+
+Finished in 30.576831396 seconds.
+------
+0 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.03 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `[]' for nil:NilClass
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/bridge_helper.rb:43:in `element_id_from'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:619:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:179:in `create_customer'
+smoke_test/quote.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 15
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     product_name = create_product
+     26:     sleep 15
+===============================================================================
+
+
+Finished in 41.456984471 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-150742
+description available
+Created Product 20170712-150834
+customer selected in Quote page
+Available
+Created Quote for Customer 20170712-150742 20170712-151000
+Adding Line item WithProduct 20170712-150834
+Created line item
+.
+
+Finished in 227.04889216 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-152635
+description available
+Created Product 20170712-152725
+customer selected in Quote page
+Available
+Created Quote for Customer 20170712-152635 20170712-152836
+Adding Line item WithProduct 20170712-152725
+Created line item
+.
+
+Finished in 208.814139153 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-153052
+description available
+Created Product 20170712-153142
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class= 'fa fa-plus-circle']"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/Quoteconvertedtoorder.rb:27:in `test_create_quote'
+     24:     sleep 5
+     25:     product_name = create_product
+     26:     sleep 15
+  => 27:     @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
+     28:     sleep 2
+     29:     @driver.find_element(:xpath, "html/body/header/div/div[2]/div[2]/ul/li[2]/a").click
+     30:     sleep 5
+===============================================================================
+
+
+Finished in 177.599671217 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `[]' for nil:NilClass
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/bridge_helper.rb:43:in `element_id_from'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:619:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/Quoteconvertedtoorder.rb:21:in `test_create_quote'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+  => 21:     login
+     22:     sleep 15
+     23:     customer_Name = create_customer
+     24:     sleep 5
+===============================================================================
+
+
+Finished in 19.397941306 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-153504
+description available
+Created Product 20170712-153603
+customer selected in Quote page
+Available
+Created Quote for Customer 20170712-153504 20170712-153719
+Adding Line item WithProduct 20170712-153603
+Created line item
+Created SO from QT
+.
+
+Finished in 266.398141411 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::WebDriverError: unexpected response, code=404, content-type="text/plain"
+  unknown command: session/19d25939065b3ee7ed99f4377b116928/element/click
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:90:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/../test_helper.rb:179:in `create_customer'
+smoke_test/Quoteconvertedtoorder.rb:23:in `test_create_quote'
+     20:   def test_create_quote
+     21:     login
+     22:     sleep 15
+  => 23:     customer_Name = create_customer
+     24:     sleep 5
+     25:     product_name = create_product
+     26:     sleep 15
+===============================================================================
+
+
+Finished in 61.512693063 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote): NoMethodError: undefined method `[]' for nil:NilClass
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/bridge_helper.rb:43:in `element_id_from'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:619:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/Quoteconvertedtoorder.rb:21:in `test_create_quote'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+  => 21:     login
+     22:     sleep 15
+     23:     customer_Name = create_customer
+     24:     sleep 5
+===============================================================================
+
+
+Finished in 11.224717851 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.09 tests/s, 0.09 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-155620
+description available
+Created Product 20170712-155716
+customer selected in Quote page
+Available
+Created Quote for Customer 20170712-155620 20170712-155828
+Adding Line item WithProduct 20170712-155716
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element <a class="button" ng-disabled="!isEditable" ng_click="addNewLineItem()">...</a> is not clickable at point (816, 550). Other element would receive the click: <div class="preloader-wrapper">...</div>
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/Quoteconvertedtoorder.rb:69:in `test_create_quote'
+     66:     sleep 5
+     67:     puts "Created "+quote_Name
+     68:     puts "Adding Line item With"+product_name
+  => 69:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[1]/div[2]/a").click
+     70:     sleep 5
+     71:     @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+     72:     sleep 2
+===============================================================================
+
+
+Finished in 221.176944644 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-160049
+description available
+Created Product 20170712-160141
+customer selected in Quote page
+Available
+Created Quote for Customer 20170712-160049 20170712-160302
+Adding Line item WithProduct 20170712-160141
+Created line item
+Not Available
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::UnknownError: unknown error: Element <button class="submit-button button" ng-class="buttonClass" ng-disabled="disable || model.disabled" role="button" tabindex="0">...</button> is not clickable at point (834, 661). Other element would receive the click: <div class="picker__holder" tabindex="-1">...</div>
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/Quoteconvertedtoorder.rb:91:in `test_create_quote'
+     88:     puts "Not Available"  
+     89:     sleep 3
+     90:     end
+  => 91:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[3]/div/submit-button/button").click
+     92:     puts "Created SO from QT"
+     93:     sleep 5
+     94:   end
+===============================================================================
+
+
+Finished in 253.736470632 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/Quoteconvertedtoorder
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170712-161020
+description available
+Created Product 20170712-161116
+
+
+Finished in 167.493880169 seconds.
+------
+0 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.01 assertions/s
