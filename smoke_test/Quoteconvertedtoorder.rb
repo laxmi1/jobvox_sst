@@ -80,13 +80,14 @@ class Quote < Test::Unit::TestCase
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/ul/li[2]/a").click
     sleep 5
     begin
-    #due date
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[1]/div/section[1]/div/div[3]/date-picker/div/div/div/span/i").click
     sleep 2
-    @driver.find_element(:xpath, "//button[@class='picker__button--today']").click
+    @driver.find_element(:xpath, "//div[@class='picker__footer']/button[1]").click
+    puts "Available"
+    sleep 5
     rescue => e
     puts "Not Available"
-    sleep 2
+    sleep 5
     end
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter
     puts "Created SO from QT"

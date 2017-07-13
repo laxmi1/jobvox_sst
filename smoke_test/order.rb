@@ -28,7 +28,7 @@ class Order < Test::Unit::TestCase
     sleep 2
     @driver.find_element(:xpath, "html/body/header/div/div[2]/div[2]/ul/li[3]/a").click
     sleep 5
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[2]/div/section[1]/div/div[1]/vox-dynamic-select/div/div/div").click
     sleep 4
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     sleep 5
