@@ -19,27 +19,29 @@ class Customer < Test::Unit::TestCase
 # Test to login with valid credentials
   def test_create_customer
     login
-    sleep 15
-    # @driver.find_element(:link_text, "Customers & Vendors").click
-    @driver.find_element(:xpath, ".//*[@id='main-nav']/li[4]/a/span").click
-    @driver.find_element(:xpath, "//a[@ui-sref='companies']").click
+    sleep 10
+    customer_Name = create_customer
     sleep 5
-    @driver.find_element(:xpath, "//button[@uib-tooltip='Actions']").send_keys :enter
-
-    @driver.find_element(:link_text, "New customer").click
-
+    @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-header']/div/div[2]/div[2]/ul/li[13]/a").click
+    sleep 2
     time = get_Present
-    customer_Name = "Customer "+time
-    @driver.find_element(:xpath, "//input[@placeholder='Name']").send_keys customer_Name
-    begin
-      @driver.find_element(:xpath, "//input[@placeholder='Legal Name']").send_keys "Legal Name"
-      puts "Legal name available"
-    rescue => e
-      puts "Legal name not available"
-    end 
-    
-
-end
+    contact_Name = "Contact "+time
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[1]/div/div[1]/vox-text-field/div/div/input").send_keys contact_Name
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[1]/div/div[2]/vox-dynamic-select/div/div").click
+    sleep 4
+    @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
+    sleep 2
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
+    puts "customer selected in invoice page"
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[1]/div/section[5]/div/div[1]/vox-text-field/div/div/input").send_keys "abhinav@techvoxinc.com"
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div[2]/div/form/div[2]/div/submit-button/button").send_keys :enter
+    sleep 5
+  end
 
   
 # To find the element and throws an error if element is not found.

@@ -2296,3 +2296,85 @@ Finished in 167.493880169 seconds.
 0% passed
 ------
 0.00 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"id","selector":"email"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/jobboard.rb:21:in `test_create_jobboard'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_jobboard
+  => 21:     login
+     22:     sleep 20
+     23:     @driver.find_element(:xpath, ".//*[@id='main-nav']/li[2]/a").click
+     24:     sleep 5    
+===============================================================================
+
+
+Finished in 14.381119501 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.07 tests/s, 0.07 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+E
+===============================================================================
+Error: test_create_jobboard(Login):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"id","selector":"email"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/jobboard.rb:21:in `test_create_jobboard'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_jobboard
+  => 21:     login
+     22:     sleep 20
+     23:     @driver.find_element(:xpath, ".//*[@id='main-nav']/li[2]/a").click
+     24:     sleep 5    
+===============================================================================
+
+
+Finished in 12.53730386 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.08 tests/s, 0.08 assertions/s
+Loaded suite smoke_test/jobboard
+Started
+.
+
+Finished in 87.158461309 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s

@@ -25,7 +25,7 @@ class Order < Test::Unit::TestCase
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
     @driver.find_element(:link_text, "New Job").click
     sleep 5
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[1]/div/div[1]/vox-dynamic-select/div/div").click
     sleep 2
     @driver.find_element(:xpath, "//input[@placeholder='Select customer...']").send_keys customer_Name
     sleep 2

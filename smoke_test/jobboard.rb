@@ -26,16 +26,30 @@ class Login < Test::Unit::TestCase
     sleep 4
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[2]").click
     sleep 4
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[3]").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[3]/i").click
     sleep 4
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[4]/i").click
-    sleep 6
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[5]/i").click
-    sleep 8
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/div/a/i").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='page-header']/div/div[2]/div/ul/li[1]/a").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/div/a/i").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='page-header']/div/div[2]/div/ul/li[2]/a").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/div/a/i").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='page-header']/div/div[2]/div/ul/li[3]/a").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/div/a/i").click
+    sleep 2
+    @driver.find_element(:xpath, ".//*[@id='page-header']/div/div[2]/div/ul/li[4]/a").click
+    sleep 2
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[4]").click
-    sleep 8
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[6]").click
+    sleep 4
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[3]").click
     sleep 6
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/header/div/div[2]/a[5]").click
+    sleep 8
   end
 
   

@@ -66,16 +66,16 @@ class Order < Test::Unit::TestCase
     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[3]/div/submit-button/button").send_keys :enter
     sleep 5
     puts "Created "+order_Name
-    puts "Adding Line item With"+product_name
-    @driver.find_element(:xpath, "//div[@class='add-new-line-item']").click
-    sleep 5
-    @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
-    sleep 2
-    @driver.find_element(:xpath, "//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
-    sleep 2
-    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[4]/button").click
-    puts "Created line item"
-    sleep 5
+    # puts "Adding Line item With"+product_name
+    # @driver.find_element(:xpath, "//div[@class='add-new-line-item']").click
+    # sleep 5
+    # @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+    # sleep 2
+    # @driver.find_element(:xpath, "//div[@class='ui-select-choices-row ng-scope active']/a/span/div").click
+    # sleep 2
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[4]/button").click
+    # puts "Created line item"
+    # sleep 5
        
   end
 
