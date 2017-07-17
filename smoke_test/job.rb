@@ -45,7 +45,10 @@ class Order < Test::Unit::TestCase
     
     @driver.find_element(:xpath, "//input[@placeholder='Quantity']").send_keys "2"
     sleep 2
-
+    # @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+    # sleep 5
+    # @driver.send_keys(:xpath,"//button[@class='picker__button--today']").click
+    # sleep 2
     workflow = "//select[@name='jobTemplateId']"
     workflow_index = "2"
     getSelect_by_index(workflow,workflow_index)

@@ -29,7 +29,7 @@ class Po < Test::Unit::TestCase
     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys mr_Name
     @driver.find_element(:xpath, "//textarea[@placeholder='About this MR']").send_keys "This material Receipt is created through Selenium Automation"
     
-    @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[2]/form/div[1]/div/section[3]/div/div[1]/vox-dynamic-select/div/div").click
     sleep 2
      @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click

@@ -25,26 +25,26 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
     @driver.find_element(:xpath, "//a[@ui-sref='materials']").click
     sleep 2
-    @driver.find_element(:link_text, "New Material").click
+    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[1]/div/div[2]/vox-materials-list-controls/a[3]/i").click
     
     time = get_Present
     material_name = "Material "+time
-    @driver.find_element(:xpath, "//input[@name='material[name]']").send_keys material_name 
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[1]/div/div/vox-text-field/div/div/input").send_keys material_name 
 
-    type = "//select[@name='material[part_type_id]']"
+    type = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[1]/vox-select-field/div/select"
     type_index = "3"
     getSelect_by_index(type,type_index)
     sleep 2
 
-    category = "//select[@name='material[category_id]']"
+    category = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[2]/vox-select-field/div/select"
     category_index = "2"
     getSelect_by_index(category,category_index)
 
-    units = "//select[@name='material[units]']"
+    units = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[1]/vox-select-field/div/select"
     units_index = "2"
     getSelect_by_index(units,units_index)
 
-    buyingunits = "//select[@name='material[buying_units]']"
+    buyingunits = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[2]/vox-select-field/div/select"
     buyingunits_index = "2"
     getSelect_by_index(buyingunits,buyingunits_index)
 

@@ -2378,3 +2378,638 @@ Finished in 87.158461309 seconds.
 100% passed
 ------
 0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/quote
+Started
+E
+===============================================================================
+Error: test_create_quote(Quote):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"id","selector":"email"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/../test_helper.rb:92:in `login'
+smoke_test/quote.rb:21:in `test_create_quote'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_quote
+  => 21:     login
+     22:     sleep 15
+     23:     customer_Name = create_customer
+     24:     sleep 5
+===============================================================================
+
+
+Finished in 20.617131191 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.05 tests/s, 0.05 assertions/s
+Loaded suite smoke_test/quote
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-081416
+description available
+Created Product 20170717-081506
+customer selected in Quote page
+Available
+Created Quote for Customer 20170717-081416 20170717-081623
+Adding Line item WithProduct 20170717-081506
+Created line item
+.
+
+Finished in 205.213568503 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/order
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-100305
+description available
+Created Product 20170717-100355
+customer selected in order page
+Available
+Created Sales Order for Customer 20170717-100305 20170717-100509
+.
+
+Finished in 198.86308319 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/tasks
+Started
+E
+===============================================================================
+Error: test_create_task(Login): Net::ReadTimeout: Net::ReadTimeout
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/protocol.rb:158:in `rbuf_fill'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1400:in `block in request'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:853:in `start'
+/home/abhinav/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/http.rb:1398:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:124:in `response_for'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:78:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/../test_helper.rb:96:in `login'
+smoke_test/tasks.rb:21:in `test_create_task'
+     18:   
+     19: # Test to login with valid credentials
+     20:   def test_create_task
+  => 21:     login
+     22:     sleep 20
+     23:     @driver.find_element(:xpath, ".//*[@id='main-nav']/li[9]/a/i").click
+     24:     sleep 5 
+===============================================================================
+
+
+Finished in 159.362988616 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/tasks
+Started
+Created task for 20170717-113915
+.
+
+Finished in 72.743166113 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/invoice
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-114051
+description available
+Created Product 20170717-114142
+customer selected in invoice page
+Available
+Created invoice for Customer 20170717-114051 20170717-114251
+Adding Line item WithProduct 20170717-114142
+Created line item
+.
+
+Finished in 203.488886263 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/order
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-114507
+description available
+Created Product 20170717-114559
+customer selected in order page
+Available
+Created Sales Order for Customer 20170717-114507 20170717-114719
+Adding Line item WithProduct 20170717-114559
+E
+===============================================================================
+Error: test_create_order(Order):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div[2]/a"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/order.rb:70:in `test_create_order'
+     67:     sleep 5
+     68:     puts "Created "+order_Name
+     69:     puts "Adding Line item With"+product_name
+  => 70:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div[2]/a").click
+     71:     sleep 5
+     72:     @driver.find_element(:xpath, "//input[@placeholder='Search for product...']").send_keys product_name
+     73:     sleep 2
+===============================================================================
+
+
+Finished in 203.656847932 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.00 tests/s, 0.00 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-115012
+customer selected in job page
+Description is available
+Details available
+Created Job for Customer 20170717-115012 20170717-115051
+.
+
+Finished in 117.369663444 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-121553
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order): NoMethodError: undefined method `send_keys' for #<Selenium::WebDriver::Driver:0x00000000ccda58>
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 2
+  => 50:     @driver.send_keys(:xpath,"//div[@class='picker__footer']/button[1]").click
+     51:     sleep 2
+     52:     workflow = "//select[@name='jobTemplateId']"
+     53:     workflow_index = "2"
+===============================================================================
+
+
+Finished in 103.173245355 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-121831
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order): NoMethodError: undefined method `send_keys' for #<Selenium::WebDriver::Driver:0x0000000159b360>
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 2
+  => 50:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").click
+     51:     sleep 2
+     52:     workflow = "//select[@name='jobTemplateId']"
+     53:     workflow_index = "2"
+===============================================================================
+
+
+Finished in 102.26362675 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-122027
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order): NoMethodError: undefined method `send_keys' for #<Selenium::WebDriver::Driver:0x000000029784a0>
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").click
+     51:     sleep 2
+     52:     workflow = "//select[@name='jobTemplateId']"
+     53:     workflow_index = "2"
+===============================================================================
+
+
+Finished in 103.716590715 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-122916
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order): NoMethodError: undefined method `send_keys' for #<Selenium::WebDriver::Driver:0x00000002848968>
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").send_keys :enter
+     51:     sleep 2
+     52:     workflow = "//select[@name='jobTemplateId']"
+     53:     workflow_index = "2"
+===============================================================================
+
+
+Finished in 108.589202493 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-123710
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order): NoMethodError: undefined method `send_keys' for #<Selenium::WebDriver::Driver:0x000000020c9638>
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").send_keys :click
+     51:     sleep 2
+     52:     workflow = "//select[@name='jobTemplateId']"
+     53:     workflow_index = "2"
+===============================================================================
+
+
+Finished in 135.782623829 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-124150
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order):
+  Selenium::WebDriver::Error::ElementNotVisibleError: element not visible
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.find_element(:xpath, "//div[@class='picker__footer']").click
+     51:     sleep 2
+     52:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").send_keys :click
+     53:     sleep 2
+===============================================================================
+
+
+Finished in 114.911945555 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-124400
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order):
+  Selenium::WebDriver::Error::ElementNotVisibleError: element not visible
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.find_element(:xpath, "//div[@class='picker__footer']").click
+     51:     sleep 2
+     52:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").click
+     53:     sleep 2
+===============================================================================
+
+
+Finished in 107.641715445 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/job
+Started
+Legal name available
+Contact available
+created customer with name: Customer 20170717-124611
+customer selected in job page
+Description is available
+E
+===============================================================================
+Error: test_create_job(Order):
+  Selenium::WebDriver::Error::ElementNotVisibleError: element not visible
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:402:in `click_element'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/element.rb:74:in `click'
+smoke_test/job.rb:50:in `test_create_job'
+     47:     sleep 2
+     48:     @driver.find_element(:xpath, ".//*[@id='main-section']/div/section/section/div/form/section[3]/div[1]/div[3]/date-picker/div/div/div/span/i").click
+     49:     sleep 5
+  => 50:     @driver.find_element(:xpath, "//div[@class='picker__footer']").click
+     51:     sleep 2
+     52:     @driver.send_keys(:xpath,"//button[@class='picker__button--today']").click
+     53:     sleep 2
+===============================================================================
+
+
+Finished in 110.261879058 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreceipt
+Started
+created vendor with name: Test vendor 20170717-154458
+E
+===============================================================================
+Error: test_create_mr(Po):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/materialreceipt.rb:32:in `test_create_mr'
+     29:     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys mr_Name
+     30:     @driver.find_element(:xpath, "//textarea[@placeholder='About this MR']").send_keys "This material Receipt is created through Selenium Automation"
+     31:     
+  => 32:     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+     33:     sleep 2
+     34:      @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
+     35:     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
+===============================================================================
+
+
+Finished in 127.382563317 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreceipt
+Started
+created vendor with name: Test vendor 20170717-160307
+E
+===============================================================================
+Error: test_create_mr(Po):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/materialreceipt.rb:32:in `test_create_mr'
+     29:     @driver.find_element(:xpath, "//input[@placeholder='Title']").send_keys mr_Name
+     30:     @driver.find_element(:xpath, "//textarea[@placeholder='About this MR']").send_keys "This material Receipt is created through Selenium Automation"
+     31:     
+  => 32:     @driver.find_element(:xpath, "//div[@class='ui-select-container ui-select-bootstrap dropdown ng-valid']").click
+     33:     sleep 2
+     34:      @driver.find_element(:xpath, "//input[@placeholder='Select vendor...']").send_keys vendor_Name
+     35:     @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
+===============================================================================
+
+
+Finished in 92.917469075 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreceipt
+Started
+created vendor with name: Test vendor 20170717-161029
+vendor selected in MR page
+Created Material Receipt for Test vendor 20170717-161029 20170717-161040
+.
+
+Finished in 67.4027317 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreceipt
+Started
+created vendor with name: Test vendor 20170717-161159
+vendor selected in MR page
+Created Material Receipt for Test vendor 20170717-161159 20170717-161210
+.
+
+Finished in 80.034426919 seconds.
+------
+1 tests, 1 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+100% passed
+------
+0.01 tests/s, 0.01 assertions/s
+Loaded suite smoke_test/materialreq
+Started
+E
+===============================================================================
+Error: test_create_materialreq(Login):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='material[name]']"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/materialreq.rb:32:in `test_create_materialreq'
+     29:     
+     30:     time = get_Present
+     31:     material_name = "Material "+time
+  => 32:     @driver.find_element(:xpath, "//input[@name='material[name]']").send_keys material_name 
+     33: 
+     34:     type = "//select[@name='material[part_type_id]']"
+     35:     type_index = "3"
+===============================================================================
+
+
+Finished in 58.059611797 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.02 tests/s, 0.02 assertions/s
+Loaded suite smoke_test/materialreq
+Started
+Element : //select[@name='material[part_type_id]'] not found
+Element : //select[@name='material[category_id]'] not found
+Element : //select[@name='material[units]'] not found
+Element : //select[@name='material[buying_units]'] not found
+E
+===============================================================================
+Error: test_create_materialreq(Login):
+  Selenium::WebDriver::Error::NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='material[cost_in_dollars]']"}
+    (Session info: chrome=55.0.2883.87)
+    (Driver info: chromedriver=2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform=Linux 4.2.0-42-generic x86_64)
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/default.rb:107:in `request'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/http/common.rb:61:in `call'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:669:in `raw_execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:647:in `execute'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/remote/bridge.rb:616:in `find_element_by'
+/home/abhinav/.rvm/gems/ruby-2.3.0@jobvox_sst/gems/selenium-webdriver-3.3.0/lib/selenium/webdriver/common/search_context.rb:62:in `find_element'
+smoke_test/materialreq.rb:52:in `test_create_materialreq'
+     49:     getSelect_by_index(buyingunits,buyingunits_index)
+     50: 
+     51:     sleep 2
+  => 52:     @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").clear
+     53:     @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").send_keys "30"
+     54: 
+     55:     sleep 2
+===============================================================================
+
+
+Finished in 94.057989447 seconds.
+------
+1 tests, 1 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+0.01 tests/s, 0.01 assertions/s
