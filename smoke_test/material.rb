@@ -47,6 +47,10 @@ class Product < Test::Unit::TestCase
     buyingunits = "//select[@name='material[buying_units]']"
     buyingunits_index = "2"
     getSelect_by_index(buyingunits,buyingunits_index)
+    
+    sellingunits = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[1]/vox-select-field/div/select"
+    sellingunits_index= "2"
+    getSelect_by_index(sellingunits,sellingunits_index)
 
     sleep 2
     @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[1]/vox-text-field/div/div/input").clear
@@ -56,10 +60,10 @@ class Product < Test::Unit::TestCase
     @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").clear
     @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").send_keys "40"
     
-    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[3]/submit-button/button").click 
-    sleep 5
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[3]/submit-button/button").send_keys :enter
+    sleep 10
     puts "Created "+material_name
-     
+    sleep 2
   end
 
   

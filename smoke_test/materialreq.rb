@@ -20,54 +20,56 @@ class Login < Test::Unit::TestCase
   def test_create_materialreq
     login
     sleep 15
-    @driver.find_element(:xpath, "//div[@class='account-name dropdown']").click
-    @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
-    @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
-    @driver.find_element(:xpath, "//a[@ui-sref='materials']").click
-    sleep 2
-    @driver.find_element(:xpath, ".//*[@id='main-section']/div/div/div[1]/div/div[2]/vox-materials-list-controls/a[3]/i").click
-    
-    time = get_Present
-    material_name = "Material "+time
-    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[1]/div/div/vox-text-field/div/div/input").send_keys material_name 
-
-    type = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[1]/vox-select-field/div/select"
-    type_index = "3"
-    getSelect_by_index(type,type_index)
-    sleep 2
-
-    category = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[2]/vox-select-field/div/select"
-    category_index = "2"
-    getSelect_by_index(category,category_index)
-
-    units = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[1]/vox-select-field/div/select"
-    units_index = "2"
-    getSelect_by_index(units,units_index)
-
-    buyingunits = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[2]/vox-select-field/div/select"
-    buyingunits_index = "2"
-    getSelect_by_index(buyingunits,buyingunits_index)
-
-    sleep 2
-    @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").clear
-    @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").send_keys "30"
-
-    sleep 2
-    @driver.find_element(:xpath, "//input[@name='material[price_in_dollars]']").clear
-    @driver.find_element(:xpath, "//input[@name='material[price_in_dollars]']").send_keys "40"
-    
-    @driver.find_element(:xpath, "//input[@class='button']").click 
+    material_name = create_material
     sleep 10
-     puts "Created "+material_name
+    # @driver.find_element(:xpath, "//div[@id='account-name']/a").click
+    # @driver.find_element(:xpath, "//li[@ng-if='currentAccount.featureFlags.orderManagementEnabled && currentAccount.policies.posSettingShow']").click
+    # @driver.find_element(:xpath, "//i[@class='fa fa-dollar']").click
+    # @driver.find_element(:xpath, "//a[@ui-sref='materials']").click
+    # sleep 2
+    # @driver.find_element(:link_text, "New Material").click
+    
+    # time = get_Present
+    # material_name = "Material "+time
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[1]/div/div/vox-text-field/div/div/input").send_keys material_name 
 
-    @driver.find_element(:xpath, "//i[@class='fa fa-list']").click
+    # type = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[1]/vox-select-field/div/select"
+    # type_index = "3"
+    # getSelect_by_index(type,type_index)
+    # sleep 2
+
+    # category = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[2]/vox-select-field/div/select"
+    # category_index = "2"
+    # getSelect_by_index(category,category_index)
+
+    # units = "//select[@name='material[units]']"
+    # units_index = "2"
+    # getSelect_by_index(units,units_index)
+
+    # buyingunits = "//select[@name='material[buying_units]']"
+    # buyingunits_index = "2"
+    # getSelect_by_index(buyingunits,buyingunits_index)
+
+    # sleep 2
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[1]/vox-text-field/div/div/input").clear
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[1]/vox-text-field/div/div/input").send_keys "30"
+
+    # sleep 2
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").clear
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").send_keys "40"
+    
+    # @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[3]/submit-button/button").click 
+    # sleep 5
+    # puts "Created "+material_name
+
+    @driver.find_element(:xpath, "//i[@class= 'fa fa-plus-circle']").click
     sleep 5    
     @driver.find_element(:link_text, "New Material Requisition").click
     sleep 4
     @driver.find_element(:xpath, "//span[@class='ui-select-placeholder text-muted ng-binding']").click
     @driver.find_element(:xpath, "//input[@placeholder='Search for Material...']").send_keys material_name
     sleep 2
-    @driver.find_element(:xpath, "//div[@id='ui-select-choices-row-1-0']/a/span/div").click
+    @driver.find_element(:xpath, "//a[@class='ui-select-choices-row-inner']/span/div/span").click
     sleep 2
     uom = "//select[@name='uomName']"
     uom_index = "2"

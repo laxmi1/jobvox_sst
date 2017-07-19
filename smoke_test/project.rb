@@ -48,7 +48,7 @@ class Login < Test::Unit::TestCase
     @driver.find_element(:xpath, "//button[@class='submit-button button']").send_keys :enter 
     sleep 2
     puts "Created "+project_Name
-    sleep 5    
+    sleep 5  
   end
 
   

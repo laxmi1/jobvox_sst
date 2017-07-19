@@ -140,14 +140,14 @@ def create_material
     
     time = get_Present
     material_name = "Material "+time
-    @driver.find_element(:xpath, "//input[@name='material[name]']").send_keys material_name 
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[1]/div/div/vox-text-field/div/div/input").send_keys material_name 
 
-    type = "//select[@name='material[part_type_id]']"
+    type = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[1]/vox-select-field/div/select"
     type_index = "3"
     getSelect_by_index(type,type_index)
     sleep 2
 
-    category = "//select[@name='material[category_id]']"
+    category = "html/body/div[1]/div/div/form/div[2]/div/div/section[2]/div/div[2]/vox-select-field/div/select"
     category_index = "2"
     getSelect_by_index(category,category_index)
 
@@ -158,18 +158,23 @@ def create_material
     buyingunits = "//select[@name='material[buying_units]']"
     buyingunits_index = "2"
     getSelect_by_index(buyingunits,buyingunits_index)
-
-    sleep 2
-    @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").clear
-    @driver.find_element(:xpath, "//input[@name='material[cost_in_dollars]']").send_keys "30"
-
-    sleep 2
-    @driver.find_element(:xpath, "//input[@name='material[price_in_dollars]']").clear
-    @driver.find_element(:xpath, "//input[@name='material[price_in_dollars]']").send_keys "40"
     
-    @driver.find_element(:xpath, "//input[@class='button']").click 
-    sleep 5
-     puts "Created "+material_name
+    sellingunits = "html/body/div[1]/div/div/form/div[2]/div/div/section[3]/div/div[1]/vox-select-field/div/select"
+    sellingunits_index= "2"
+    getSelect_by_index(sellingunits,sellingunits_index)
+
+    sleep 2
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[1]/vox-text-field/div/div/input").clear
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[1]/vox-text-field/div/div/input").send_keys "30"
+
+    sleep 2
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").clear
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[2]/div/div/section[7]/div/div[2]/vox-text-field/div/div/input").send_keys "40"
+    
+    @driver.find_element(:xpath, "html/body/div[1]/div/div/form/div[3]/submit-button/button").send_keys :enter
+    sleep 10
+    puts "Created "+material_name
+    sleep 2
     return material_name   
   end
   
