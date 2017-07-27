@@ -20,6 +20,10 @@ class Login < Test::Unit::TestCase
   def test_create_project
     login
     sleep 10
+    begin
+    @driver.find_element(:xpath, "//a[@ui-sref='projects']").displayed?
+    puts "project available"
+    sleep 5
     customer_Name = create_customer
     sleep 5
     @driver.find_element(:xpath, "//div[@class='create-shortcut dropdown ng-scope']/a").click
@@ -49,6 +53,12 @@ class Login < Test::Unit::TestCase
     sleep 2
     puts "Created "+project_Name
     sleep 5  
+    rescue => e
+    puts "Project not available"
+    @driver.find_element(:xpath, ".//*[@id='main-header']/div/div[3]/div[1]/a/span").click
+    @driver.find_element(:xpath, ".//*[@id='main-header']/div/div[3]/div[1]/ul/li[4]/a").click
+    sleep 5
+    end
   end
 
   
